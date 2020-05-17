@@ -2,3 +2,11 @@ apply plugin: 'java'
 apply plugin: 'application'
 mainClassName = "ru.stqa.pft.sandbox.HelloWorld"
 
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.testng:testng:7.1.0'
+}
+

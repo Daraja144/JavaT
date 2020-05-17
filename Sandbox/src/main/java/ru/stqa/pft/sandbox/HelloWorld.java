@@ -18,7 +18,7 @@ public class HelloWorld {
 
       Rectangle r = new Rectangle(7,9);
 
-    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + s.area());
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + r.area());
 
     Point p = new Point(2, 4, 6, 8);
 
