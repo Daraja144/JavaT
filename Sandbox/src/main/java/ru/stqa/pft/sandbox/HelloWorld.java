@@ -10,11 +10,15 @@ public class HelloWorld {
       hello("Vita");
       hello("Vania");
 
-      double len = 5;
-      double a = 7;
-      double b = 9;
-    System.out.println("Площадь со стороной квадрата " + len + " = " + area(len));
-    System.out.println("Площадь прямоугольника со сторонами " + a + " и " + b + " = " + area(a,b));
+
+
+      Square s = new Square(5);
+
+    System.out.println("Площадь со стороной квадрата " + s.l + " = " + s.area());
+
+      Rectangle r = new Rectangle(7,9);
+
+    System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + s.area());
     }
     public static void hello(String somebody) {
 
@@ -22,12 +26,5 @@ public class HelloWorld {
 
   }
 
-  public static double area(double f) {
-    return f * f;
-  }
-
-  public static double area(double a, double b) {
-    return a * b;
-  }
 
 }
