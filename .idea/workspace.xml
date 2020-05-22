@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/pft/sandbox/HelloWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/pft/sandbox/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/pft/sandbox/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/pft/sandbox/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/pft/sandbox/PointTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/test/java/ru/stqa/pft/sandbox/PointTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,9 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/Sandbox">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/addressbook-web-tests">
       <ProjectState />
     </projectState>
   </component>
@@ -73,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Sandbox/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sandbox/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -83,8 +84,12 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.sandbox" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.HelloWorld (1)">
+  <component name="RunManager" selected="TestNG.GroupCreationTests">
     <configuration name="HelloWorld (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.HelloWorld" />
       <module name="Sandbox.main" />
@@ -98,47 +103,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HelloWorld" />
-      <module name="JavaT" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloWorld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.HelloWorld" />
-      <module name="Sandbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PointTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Sandbox.test" />
+    <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.PointTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.SquareTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.GroupCreationTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -147,17 +121,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HelloWorld" />
       <item itemvalue="Application.HelloWorld (1)" />
-      <item itemvalue="TestNG.SquareTests" />
-      <item itemvalue="TestNG.PointTests" />
+      <item itemvalue="TestNG.GroupCreationTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Application.HelloWorld (1)" />
-        <item itemvalue="TestNG.PointTests" />
-        <item itemvalue="TestNG.SquareTests" />
-        <item itemvalue="Application.HelloWorld" />
       </list>
     </recent_temporary>
   </component>
@@ -187,38 +157,38 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="93" key="#Project_Structure" timestamp="1589767041364">
+    <state x="440" y="93" key="#Project_Structure" timestamp="1590125629824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589767041364" />
-    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589768312346">
+    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1590125629824" />
+    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590126033616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589768312346" />
+    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590126033616" />
     <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589677357453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1589677357453" />
-    <state x="740" y="228" key="FileChooserDialogImpl" timestamp="1589675210828">
+    <state x="740" y="228" key="FileChooserDialogImpl" timestamp="1590115043593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589675210828" />
-    <state width="1876" height="258" key="GridCell.Tab.0.bottom" timestamp="1589770926402">
+    <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590115043593" />
+    <state width="1876" height="258" key="GridCell.Tab.0.bottom" timestamp="1590158582301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589770926402" />
-    <state width="1876" height="258" key="GridCell.Tab.0.center" timestamp="1589770926402">
+    <state width="1876" height="258" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590158582301" />
+    <state width="1876" height="258" key="GridCell.Tab.0.center" timestamp="1590158582301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589770926402" />
-    <state width="1876" height="258" key="GridCell.Tab.0.left" timestamp="1589770926402">
+    <state width="1876" height="258" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590158582301" />
+    <state width="1876" height="258" key="GridCell.Tab.0.left" timestamp="1590158582300">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589770926402" />
-    <state width="1876" height="258" key="GridCell.Tab.0.right" timestamp="1589770926402">
+    <state width="1876" height="258" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590158582300" />
+    <state width="1876" height="258" key="GridCell.Tab.0.right" timestamp="1590158582301">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589770926402" />
+    <state width="1876" height="258" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590158582301" />
     <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1589692006619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -235,14 +205,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589692006619" />
+    <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590116916642" />
     <state x="670" y="221" key="RollbackChangesDialog" timestamp="1589733830601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589733830601" />
-    <state x="633" y="157" key="SettingsEditor" timestamp="1589768197830">
+    <state x="633" y="157" key="SettingsEditor" timestamp="1590125883666">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1589768197830" />
+    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590125883666" />
     <state x="797" y="296" key="chooseDestDirectoryDialog" timestamp="1589677357375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -251,5 +225,8 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589766883968" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaT$GroupCreationTests_testGroupCreationTests.ic" NAME="GroupCreationTests.testGroupCreationTests Coverage Results" MODIFIED="1590119501656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
