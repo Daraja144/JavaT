@@ -39,7 +39,7 @@ public class NewContactCreationTests {
     fillNewContactForm(new NewContactData("Daria", "Zamotorina", "Dara", "QA Engineer", "1234567890", "7987987987", "0980980980", "daraz@gmail.com", "11", "June", "1986", "qiwueiuye Rd", "2456"));
     submitNewContactForm();
     gotoHomePage();
-    logout();
+
   }
 
   private void logout() {
@@ -99,6 +99,7 @@ public class NewContactCreationTests {
 
   @AfterMethod(alwaysRun = true)
   public void tearDown() throws Exception {
+    logout();
     wd.quit();
   }
 
