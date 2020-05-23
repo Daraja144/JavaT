@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/NewContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/NewContactCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,7 @@
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
+  <component name="RunManager" selected="TestNG.NewContactCreationTests">
     <configuration name="HelloWorld (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.HelloWorld" />
       <module name="Sandbox.main" />
@@ -120,12 +121,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewContactCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.NewContactCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewContactCreationTests.testNewContactCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.NewContactCreationTests" />
+      <option name="METHOD_NAME" value="testNewContactCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.HelloWorld (1)" />
       <item itemvalue="TestNG.GroupCreationTests" />
+      <item itemvalue="TestNG.NewContactCreationTests" />
+      <item itemvalue="TestNG.NewContactCreationTests.testNewContactCreation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.NewContactCreationTests" />
+        <item itemvalue="TestNG.NewContactCreationTests.testNewContactCreation" />
         <item itemvalue="TestNG.GroupCreationTests" />
         <item itemvalue="Application.HelloWorld (1)" />
       </list>
@@ -161,10 +201,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1590125629824" />
-    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590126033616">
+    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590190239430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590126033616" />
+    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590190239430" />
     <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589677357453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,22 +213,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590115043593" />
-    <state width="1876" height="327" key="GridCell.Tab.0.bottom" timestamp="1590179813073">
+    <state width="1876" height="327" key="GridCell.Tab.0.bottom" timestamp="1590190723673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590179813073" />
-    <state width="1876" height="327" key="GridCell.Tab.0.center" timestamp="1590179813073">
+    <state width="1876" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723673" />
+    <state width="1876" height="327" key="GridCell.Tab.0.center" timestamp="1590190723673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590179813073" />
-    <state width="1876" height="327" key="GridCell.Tab.0.left" timestamp="1590179813073">
+    <state width="1876" height="327" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723673" />
+    <state width="1876" height="327" key="GridCell.Tab.0.left" timestamp="1590190723672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590179813073" />
-    <state width="1876" height="327" key="GridCell.Tab.0.right" timestamp="1590179813073">
+    <state width="1876" height="327" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723672" />
+    <state width="1876" height="327" key="GridCell.Tab.0.right" timestamp="1590190723673">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590179813073" />
+    <state width="1876" height="327" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723673" />
     <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1589692006619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -209,10 +249,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590116916642" />
-    <state x="633" y="150" key="RefactorJ.IntroduceParameterObject" timestamp="1590177747861">
+    <state x="633" y="150" key="RefactorJ.IntroduceParameterObject" timestamp="1590192943828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="150" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1590177747861" />
+    <state x="633" y="150" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1590192943828" />
     <state x="1098" y="284" key="ReplaceDuplicatesPrompt" timestamp="1590176098103">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -221,10 +261,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589733830601" />
-    <state x="633" y="157" key="SettingsEditor" timestamp="1590125883666">
+    <state x="633" y="157" key="SettingsEditor" timestamp="1590190273648">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590125883666" />
+    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590190273648" />
     <state x="797" y="296" key="chooseDestDirectoryDialog" timestamp="1589677357375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,10 +273,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589766883968" />
-    <state x="690" y="269" key="extract.method.dialog" timestamp="1590176613911">
+    <state x="690" y="269" key="extract.method.dialog" timestamp="1590191427266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="269" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590176613911" />
+    <state x="690" y="269" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590191427266" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaT$GroupCreationTests_testGroupCreationTests.ic" NAME="GroupCreationTests.testGroupCreationTests Coverage Results" MODIFIED="1590119501656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
