@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/NewContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/NewContactCreationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,12 +85,15 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.sandbox" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.addressbook" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.NewContactCreationTests">
+  <component name="RunManager" selected="TestNG.GroupDeletionTests">
     <configuration name="HelloWorld (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.HelloWorld" />
       <module name="Sandbox.main" />
@@ -114,6 +117,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.GroupCreationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupDeletionTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.GroupDeletionTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -161,9 +181,11 @@
       <item itemvalue="TestNG.GroupCreationTests" />
       <item itemvalue="TestNG.NewContactCreationTests" />
       <item itemvalue="TestNG.NewContactCreationTests.testNewContactCreation" />
+      <item itemvalue="TestNG.GroupDeletionTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupDeletionTests" />
         <item itemvalue="TestNG.NewContactCreationTests" />
         <item itemvalue="TestNG.NewContactCreationTests.testNewContactCreation" />
         <item itemvalue="TestNG.GroupCreationTests" />
@@ -205,6 +227,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590190239430" />
+    <state x="663" y="265" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1590278664245">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="265" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590278664245" />
     <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589677357453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -213,22 +239,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590115043593" />
-    <state width="1876" height="327" key="GridCell.Tab.0.bottom" timestamp="1590190723673">
+    <state width="1876" height="327" key="GridCell.Tab.0.bottom" timestamp="1590205502366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723673" />
-    <state width="1876" height="327" key="GridCell.Tab.0.center" timestamp="1590190723673">
+    <state width="1876" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590205502366" />
+    <state width="1876" height="327" key="GridCell.Tab.0.center" timestamp="1590205502366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723673" />
-    <state width="1876" height="327" key="GridCell.Tab.0.left" timestamp="1590190723672">
+    <state width="1876" height="327" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590205502366" />
+    <state width="1876" height="327" key="GridCell.Tab.0.left" timestamp="1590205502366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723672" />
-    <state width="1876" height="327" key="GridCell.Tab.0.right" timestamp="1590190723673">
+    <state width="1876" height="327" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590205502366" />
+    <state width="1876" height="327" key="GridCell.Tab.0.right" timestamp="1590205502366">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="327" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590190723673" />
+    <state width="1876" height="327" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590205502366" />
     <state width="1876" height="342" key="GridCell.Tab.1.bottom" timestamp="1589692006619">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -273,10 +299,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589766883968" />
-    <state x="690" y="269" key="extract.method.dialog" timestamp="1590191427266">
+    <state x="690" y="269" key="extract.method.dialog" timestamp="1590278421529">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="269" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590191427266" />
+    <state x="690" y="269" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590278421529" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JavaT$GroupCreationTests_testGroupCreationTests.ic" NAME="GroupCreationTests.testGroupCreationTests Coverage Results" MODIFIED="1590119501656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
