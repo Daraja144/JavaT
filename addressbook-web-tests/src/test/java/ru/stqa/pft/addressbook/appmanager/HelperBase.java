@@ -21,6 +21,13 @@ public class HelperBase {
     wd.findElement(locator).sendKeys(text);
   }
 
+
+
+
+
+
+
+
   public boolean isElementPresent() {
     try {
       wd.switchTo().alert();
