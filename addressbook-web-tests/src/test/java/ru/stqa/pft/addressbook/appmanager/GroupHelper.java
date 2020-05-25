@@ -25,14 +25,15 @@ public class GroupHelper extends HelperBase {
   }
 
   public void initGroupCreation() {
-    click(By.name("new"));
+    wd.findElement(By.name("new")).click();
+  }
+
+  public void selectGroup() {
+    click(By.name("selected[]"));
   }
 
   public void deleteSelectedGroups() {
     click(By.name("delete"));
   }
 
-  public void selectGroup() {
-    click(By.name("selected[]"));
-  }
 }

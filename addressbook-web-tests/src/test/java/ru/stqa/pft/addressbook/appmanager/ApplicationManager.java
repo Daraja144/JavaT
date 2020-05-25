@@ -29,7 +29,7 @@ public class ApplicationManager {
   }
 
   public GroupHelper getGroupHelper() {
-    return navigationHelper.groupHelper;
+    return groupHelper;
   }
 
   public NavigationHelper getNavigationHelper() {
