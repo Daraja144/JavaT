@@ -26,20 +26,14 @@ public class ContactHelper extends HelperBase {
     type(By.name("mobile"), newContactData.getMobile());
     type(By.name("work"), newContactData.getWorknumber());
     type(By.name("email"), newContactData.getEmail());
-    selectDay("11");
-    selectMonth("June");
+    selectDay(By.name("bday"), newContactData.getBday());
+    selectMonth(By.name("bmonth"), newContactData.getBmonth());
     type(By.name("byear"), newContactData.getByear());
     type(By.name("address2"), newContactData.getAddress());
     type(By.name("phone2"), newContactData.getHome());
   }
 
-  private void selectMonth(String month) {
-    new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(month);
-    click(By.name("bmonth"));
-  }
-
-  private void selectDay(String day) {
-    new Select(wd.findElement(By.name("bday"))).selectByVisibleText(day);
-    click(By.name("bday"));
+  public void initContactModification() {
+    click(By.xpath("(//img[@alt='Edit']"));
   }
 }

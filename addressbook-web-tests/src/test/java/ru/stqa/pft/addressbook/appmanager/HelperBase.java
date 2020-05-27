@@ -3,6 +3,7 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class HelperBase {
   protected FirefoxDriver wd;
@@ -21,7 +22,15 @@ public class HelperBase {
     wd.findElement(locator).sendKeys(text);
   }
 
+  public void selectMonth(By locator, String text) {
+    new Select(wd.findElement(locator)).selectByVisibleText(text);
+    click(locator);
+  }
 
+  public void selectDay(By locator, String text) {
+    new Select(wd.findElement(locator)).selectByVisibleText(text);
+    click(locator);
+  }
 
 
 
@@ -45,4 +54,6 @@ public class HelperBase {
       return false;
     }
   }
+
+
 }
