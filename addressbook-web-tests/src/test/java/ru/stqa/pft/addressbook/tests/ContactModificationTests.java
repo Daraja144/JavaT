@@ -6,9 +6,10 @@ import ru.stqa.pft.addressbook.model.NewContactData;
 public class ContactModificationTests extends TestBase {
 
   @Test
-  public void testContactDeletion() {
+  public void testContactModification() {
 
     app.getNavigationHelper().gotoHomePage();
+    app.getContactHelper().selectContact();
     app.getContactHelper().initContactModification();
     app.getContactHelper().fillNewContactForm(new NewContactData(
                     "Daria",
@@ -25,7 +26,9 @@ public class ContactModificationTests extends TestBase {
                     "qiwueiuye Rd",
                     "2456"),
             ContactModificationTests.this);
-    
+    app.getContactHelper().submitContactModification();
+    app.getNavigationHelper().gotoHomePage();
+
 
 
 
