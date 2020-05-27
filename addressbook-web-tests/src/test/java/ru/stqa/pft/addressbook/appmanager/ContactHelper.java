@@ -35,7 +35,7 @@ public class ContactHelper extends HelperBase {
 
   private void selectMonth(String month) {
     new Select(wd.findElement(By.name("bmonth"))).selectByVisibleText(month);
-    wd.findElement(By.name("bmonth")).click();
+    click(By.name("bmonth"));
   }
 
   private void selectDay(String day) {
