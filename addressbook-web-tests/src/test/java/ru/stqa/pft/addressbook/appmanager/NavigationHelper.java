@@ -1,6 +1,7 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
@@ -8,7 +9,7 @@ public class NavigationHelper extends HelperBase {
   public GroupHelper groupHelper;
   public ContactHelper contactHelper;
 
-  public NavigationHelper(FirefoxDriver wd) {
+  public NavigationHelper(WebDriver wd) {
   super(wd);
   }
 
