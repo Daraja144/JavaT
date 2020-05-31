@@ -24,8 +24,9 @@ public class ContactModificationTests extends TestBase {
                     "June",
                     "1986",
                     "qiwueiuye Rd",
-                    "2456"),
-            ContactModificationTests.this);
+                    "2456",
+                    null),
+            false);
     app.getContactHelper().submitContactModification();
     app.getNavigationHelper().gotoHomePage();
 

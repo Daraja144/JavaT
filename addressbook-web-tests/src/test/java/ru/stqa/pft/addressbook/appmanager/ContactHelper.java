@@ -1,9 +1,11 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.NewContactData;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
@@ -18,7 +20,7 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
-  public void fillNewContactForm(NewContactData newContactData, TestBase testBase) {
+  public void fillNewContactForm(NewContactData newContactData, boolean creation) {
     type(By.name("firstname"), newContactData.getFirstname());
     type(By.name("lastname"), newContactData.getLastname());
     type(By.name("nickname"), newContactData.getNickname());
@@ -30,8 +32,17 @@ public class ContactHelper extends HelperBase {
     selectDay(By.name("bday"), newContactData.getBday());
     selectMonth(By.name("bmonth"), newContactData.getBmonth());
     type(By.name("byear"), newContactData.getByear());
+
+    if (creation) {
+      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(newContactData.getGroup());
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }
+
     type(By.name("address2"), newContactData.getAddress());
     type(By.name("phone2"), newContactData.getHome());
+
+
   }
 
   public void initContactModification() {

@@ -23,8 +23,9 @@ public class NewContactCreationTests extends TestBase {
             "June",
             "1986",
             "qiwueiuye Rd",
-            "2456"),
-            NewContactCreationTests.this);
+            "2456",
+                    "test1"),
+            true);
     app.getContactHelper().submitNewContactForm(NewContactCreationTests.this);
     app.getNavigationHelper().gotoHomePage();
 
