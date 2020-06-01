@@ -1,12 +1,11 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.NewContactData;
+import ru.stqa.pft.addressbook.tests.NewContactCreationTests;
 import ru.stqa.pft.addressbook.tests.TestBase;
 
 public class ContactHelper extends HelperBase {
@@ -16,7 +15,7 @@ public class ContactHelper extends HelperBase {
   }
 
 
-  public void submitNewContactForm(TestBase testBase) {
+  public void submitNewContactForm() {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
@@ -63,5 +62,32 @@ public class ContactHelper extends HelperBase {
 
   public void closeAlert() {
     wd.switchTo().alert().accept();
+  }
+
+  public void gotoAddNewPage() {
+    if (isElementPresent(By.name("new_group"))) {
+      return;
+    }
+    click(By.linkText("add new"));
+  }
+
+  public void createContact(NewContactData contact, boolean b) {
+    gotoAddNewPage();
+    fillNewContactForm(contact,
+            true);
+    submitNewContactForm();
+    gotoHomePage();
+  }
+
+  private void gotoHomePage() {
+    if (isElementPresent(By.id("maintable"))) {
+      return;
+    }
+    click(By.linkText("home"));
+  }
+
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.name("selected[]"));
   }
 }
