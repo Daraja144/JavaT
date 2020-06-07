@@ -3,7 +3,7 @@ package ru.stqa.pft.addressbook.model;
 import java.util.Objects;
 
 public class GroupData {
-  private int id;
+  public int id;
   private final String name;
   private final String header;
   private final String footer;
