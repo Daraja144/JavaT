@@ -17,21 +17,10 @@ public class ContactDeletionTests extends TestBase {
       app.getContactHelper().createContact(new NewContactData(
               "Daria",
               "Zamotorina",
-              "Dara",
-              "QA Engineer",
-              "1234567890",
-              "7987987987",
-              "0980980980",
-              "daraz@gmail.com",
-              "11",
-              "June",
-              "1986",
-              "qiwueiuye Rd",
-              "2456",
-              "test1"),
+              null),
               true);
     }
-    app.getContactHelper().selectContact();
+    app.getContactHelper().selectContact(before -1);
     app.getContactHelper().deleteContact();
     app.getContactHelper().closeAlert();
     app.getNavigationHelper().gotoHomePage();

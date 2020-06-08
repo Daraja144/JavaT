@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.NewContactData;
 
+import java.util.List;
+
 public class NewContactCreationTests extends TestBase {
 
 
@@ -11,27 +13,13 @@ public class NewContactCreationTests extends TestBase {
   public void testNewContactCreation() throws Exception {
 
     app.getContactHelper().gotoAddNewPage();
-    int before = app.getContactHelper().getContactCount();
-    app.getContactHelper().fillNewContactForm(new NewContactData(
-            "Daria",
-            "Zamotorina",
-            "Dara",
-            "QA Engineer",
-            "1234567890",
-            "7987987987",
-            "0980980980",
-            "daraz@gmail.com",
-            "11",
-            "June",
-            "1986",
-            "qiwueiuye Rd",
-            "2456",
-                    "test1"),
-            true);
+    List<NewContactData> before = app.getContactHelper().getContactList();
+    app.getContactHelper().fillNewContactForm(new NewContactData("Daria", "Zamotorina", "test1"), true);
     app.getContactHelper().submitNewContactForm();
     app.getNavigationHelper().gotoHomePage();
-    int after = app.getContactHelper().getContactCount();
-    Assert.assertEquals(after, before +1);
+    List<NewContactData> after = app.getContactHelper().getContactList();
+
+    Assert.assertEquals(after.size(), before.size() +1);
 
 
   }

@@ -1,12 +1,16 @@
 package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.NewContactData;
-import ru.stqa.pft.addressbook.tests.NewContactCreationTests;
-import ru.stqa.pft.addressbook.tests.TestBase;
+
+import javax.xml.bind.Element;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -22,25 +26,12 @@ public class ContactHelper extends HelperBase {
   public void fillNewContactForm(NewContactData newContactData, boolean creation) {
     type(By.name("firstname"), newContactData.getFirstname());
     type(By.name("lastname"), newContactData.getLastname());
-    type(By.name("nickname"), newContactData.getNickname());
-    type(By.name("title"), newContactData.getTitle());
-    type(By.name("home"), newContactData.getHomenumber());
-    type(By.name("mobile"), newContactData.getMobile());
-    type(By.name("work"), newContactData.getWorknumber());
-    type(By.name("email"), newContactData.getEmail());
-    selectDay(By.name("bday"), newContactData.getBday());
-    selectMonth(By.name("bmonth"), newContactData.getBmonth());
-    type(By.name("byear"), newContactData.getByear());
 
     if (creation) {
       new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(newContactData.getGroup());
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
-
-    type(By.name("address2"), newContactData.getAddress());
-    type(By.name("phone2"), newContactData.getHome());
-
 
   }
 
@@ -52,8 +43,10 @@ public class ContactHelper extends HelperBase {
     click(By.name("update"));
   }
 
-  public void selectContact() {
-    click(By.name("selected[]"));
+  public void selectContact(int index) {
+
+    wd.findElements(By.name("selected[]")).get(index).click();
+
   }
 
   public void deleteContact() {
@@ -93,5 +86,21 @@ public class ContactHelper extends HelperBase {
 
   public int getContactCount() {
     return wd.findElements(By.name("selected[]")).size();
+  }
+
+  public List<NewContactData> getContactList() {
+    List<NewContactData> contacts = new ArrayList<NewContactData>();
+
+    //List<WebElement> cells = element.findElements("td");
+    List<WebElement> elements = wd.findElements(By.cssSelector("odd.entry"));
+    for (WebElement element : elements) {
+      String name = element.getText();
+      NewContactData contact = new NewContactData(
+              name,
+              name,
+              null);
+      contacts.add(contact);
+    }
+    return contacts;
   }
 }
