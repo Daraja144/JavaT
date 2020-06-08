@@ -12,8 +12,8 @@ public class NewContactCreationTests extends TestBase {
   @Test
   public void testNewContactCreation() throws Exception {
 
-    app.getContactHelper().gotoAddNewPage();
     List<NewContactData> before = app.getContactHelper().getContactList();
+    app.getContactHelper().gotoAddNewPage();
     app.getContactHelper().fillNewContactForm(new NewContactData("Daria", "Zamotorina", "test1"), true);
     app.getContactHelper().submitNewContactForm();
     app.getNavigationHelper().gotoHomePage();
