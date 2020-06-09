@@ -25,24 +25,27 @@ public class NewContactData {
   }
 
   @Override
-  public String toString() {
-    return "NewContactData{" +
-            "firstname='" + firstname + '\'' +
-            ", lastname='" + lastname + '\'' +
-            '}';
-  }
-
-  @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     NewContactData that = (NewContactData) o;
     return Objects.equals(firstname, that.firstname) &&
-            Objects.equals(lastname, that.lastname);
+            Objects.equals(lastname, that.lastname) &&
+            Objects.equals(group, that.group);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(firstname, lastname);
+    return Objects.hash(firstname, lastname, group);
   }
+
+  @Override
+  public String toString() {
+    return "NewContactData{" +
+            "firstname='" + firstname + '\'' +
+            ", lastname='" + lastname + '\'' +
+            ", group='" + group + '\'' +
+            '}';
+  }
+
 }

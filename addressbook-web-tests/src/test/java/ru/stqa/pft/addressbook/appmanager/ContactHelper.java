@@ -92,7 +92,7 @@ public class ContactHelper extends HelperBase {
     List<NewContactData> contacts = new ArrayList<NewContactData>();
 
     //List<WebElement> cells = element.findElements("td");
-    List<WebElement> elements = wd.findElements(By.cssSelector("tr"));
+    List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements) {
       String name = element.getText();
       NewContactData contact = new NewContactData(
