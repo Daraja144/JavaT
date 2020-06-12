@@ -10,9 +10,9 @@ import java.util.List;
 public class ContactModificationTests extends TestBase {
   @BeforeMethod
   public void ensurePreconditions() {
-    app.getNavigationHelper().gotoHomePage();
-    if (! app.getContactHelper().isThereAContact()) {
-      app.getContactHelper().createContact(new NewContactData(
+    app.goTo().homePage();
+    if (app.contact().list().size()==0) {
+      app.contact().create(new NewContactData(
                       "Daria",
                       "Zamotorina",
                       "test1"),
@@ -23,13 +23,13 @@ public class ContactModificationTests extends TestBase {
   @Test
   public void testContactModification() {
 
-    List<NewContactData> before = app.getContactHelper().getContactList();
+    List<NewContactData> before = app.contact().list();
     int index = before.size() -1;
     NewContactData contact = new NewContactData(before.get(index).getId(),"Daria",
             "Zamotorina", null);
 
-    app.getContactHelper().modifyContact(index, contact);
-    List<NewContactData> after = app.getContactHelper().getContactList();
+    app.contact().modify(index, contact);
+    List<NewContactData> after = app.contact().list();
     Assert.assertEquals(after.size(), before.size());
 
     before.remove(index);
