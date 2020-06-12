@@ -32,6 +32,13 @@ public class GroupHelper extends HelperBase {
   public void initGroupCreation() {
     wd.findElement(By.name("new")).click();
   }
+  public void modifyGroup(int index, GroupData group) {
+    selectGroup(index);
+    initGroupModigication();
+    fillGroupForm(group);
+    submitGroupModification();
+    returnToGroupPage();
+  }
 
   public void selectGroup(int index) {
     wd.findElements(By.name("selected[]")).get(index).click();

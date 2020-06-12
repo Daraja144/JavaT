@@ -63,12 +63,24 @@ public class ContactHelper extends HelperBase {
     }
     click(By.linkText("add new"));
   }
+  public void deleteContact(int index) {
+    selectContact(index);
+    deleteContact();
+    closeAlert();
+    gotoHomePage();
+  }
 
   public void createContact(NewContactData contact, boolean b) {
     gotoAddNewPage();
     fillNewContactForm(contact,
             true);
     submitNewContactForm();
+    gotoHomePage();
+  }
+  public void modifyContact(int index, NewContactData contact) {
+    initContactModification(index);
+    fillNewContactForm(contact, false);
+    submitContactModification();
     gotoHomePage();
   }
 
