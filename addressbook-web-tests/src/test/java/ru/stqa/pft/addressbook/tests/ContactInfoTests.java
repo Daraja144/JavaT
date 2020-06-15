@@ -1,15 +1,31 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
-
 import java.util.Arrays;
 import java.util.stream.Collectors;
-
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactInfoTests extends TestBase{
+
+  @BeforeMethod
+  public void ensurePreconditions() {
+    app.goTo().homePage();
+    if (app.contact().all().size()==0) {
+        app.contact().create(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
+              .withGroup("test1").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
+              .withAddress("ddd"),false);
+      }
+    if (app.contact().all().size()!=0) {
+      app.contact().deleteAllContacts();
+      app.contact().create(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
+              .withGroup("test1").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
+              .withAddress("ddd"),false);
+    }
+  }
+
   @Test
   public void testContactInfo () {
     app.goTo().homePage();

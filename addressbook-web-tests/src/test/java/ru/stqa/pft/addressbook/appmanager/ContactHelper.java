@@ -23,6 +23,14 @@ public class ContactHelper extends HelperBase {
   public void fillNewContactForm(ContactData newContactData, boolean creation) {
     type(By.name("firstname"), newContactData.getFirstname());
     type(By.name("lastname"), newContactData.getLastname());
+    type(By.name("address"), newContactData.getAddress());
+    type(By.name("email"), newContactData.getEmail());
+    type(By.name("email2"), newContactData.getEmail2());
+    type(By.name("email3"), newContactData.getEmail3());
+    type(By.name("home"), newContactData.getHomePhone());
+    type(By.name("mobile"), newContactData.getMobilePhone());
+    type(By.name("work"), newContactData.getWorkPhone());
+
 
     if (creation) {
       new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(newContactData.getGroup());
@@ -144,5 +152,18 @@ public class ContactHelper extends HelperBase {
     wd.navigate().back();
     return new ContactData().withId(contact.getId()).withFirstname(firstname).withLastname(lastname).withHomePhone(home).withMobilePhone(mobile)
             .withWorkPhone(work).withEmail(email).withEmail2(email2).withEmail3(email3).withAddress(address);
+  }
+
+  public void deleteAllContacts() {
+    selectAll();
+    deleteContact();
+    closeAlert();
+    contactCache = null;
+    gotoHomePage();
+
+  }
+
+  private void selectAll() {
+    wd.findElement(By.id("MassCB")).click();
   }
 }
