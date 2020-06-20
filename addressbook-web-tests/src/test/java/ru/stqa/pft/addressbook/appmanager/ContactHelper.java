@@ -30,6 +30,8 @@ public class ContactHelper extends HelperBase {
     type(By.name("home"), newContactData.getHomePhone());
     type(By.name("mobile"), newContactData.getMobilePhone());
     type(By.name("work"), newContactData.getWorkPhone());
+    attach(By.name("photo"), newContactData.getPhoto());
+
 
 
     if (creation) {
@@ -40,8 +42,8 @@ public class ContactHelper extends HelperBase {
   }
 
   public void initContactModificationById(int id) {
-    wd.findElement(By.cssSelector("input[value='"+ id +"']")).findElement(By.xpath("//img[@alt='Edit']")).click();
-    //wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
+    //wd.findElement(By.cssSelector("input[value='"+ id +"']")).findElement(By.xpath("//img[@alt='Edit']")).click();
+    wd.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s']", id))).click();
 
   }
 
