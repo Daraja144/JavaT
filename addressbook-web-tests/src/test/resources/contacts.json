@@ -13,5 +13,15 @@
     "firstname": "firstname 2",
     "lastname": "lastname 2",
     "group": "test 2"
+  },
+  {
+    "firstname": "firstname 3",
+    "lastname": "lastname 3",
+    "group": "test 3"
+  },
+  {
+    "firstname": "firstname 4",
+    "lastname": "lastname 4",
+    "group": "test 4"
   }
 ]
