@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/ContactDataGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/generators/ContactDataGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/ContactData.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/model/ContactData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/GroupCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/GroupCreationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/ContactDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/generators/ContactDataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/model/ContactData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/ContactCreationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/GroupCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,11 +100,11 @@
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
+  <component name="RunManager" selected="TestNG.ContactCreationTests">
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="-c 20 -f src/test/resources/contacts.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 3 -f src/test/resources/contacts.xml -d xml" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -187,10 +192,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.ContactCreationTests" />
         <item itemvalue="Application.ContactDataGenerator" />
+        <item itemvalue="TestNG.GroupCreationTests" />
+        <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
       </list>
     </recent_temporary>
@@ -225,10 +230,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1590125629824" />
-    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592700408234">
+    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592704704915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592700408234" />
+    <state x="467" y="252" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592704704915" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591665667322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -261,22 +266,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592627891339" />
-    <state width="1876" height="216" key="GridCell.Tab.0.bottom" timestamp="1592703410872">
+    <state width="1876" height="216" key="GridCell.Tab.0.bottom" timestamp="1592704709520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592703410872" />
-    <state width="1876" height="216" key="GridCell.Tab.0.center" timestamp="1592703410872">
+    <state width="1876" height="216" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592704709520" />
+    <state width="1876" height="216" key="GridCell.Tab.0.center" timestamp="1592704709520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592703410872" />
-    <state width="1876" height="216" key="GridCell.Tab.0.left" timestamp="1592703410872">
+    <state width="1876" height="216" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592704709520" />
+    <state width="1876" height="216" key="GridCell.Tab.0.left" timestamp="1592704709519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592703410872" />
-    <state width="1876" height="216" key="GridCell.Tab.0.right" timestamp="1592703410872">
+    <state width="1876" height="216" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592704709519" />
+    <state width="1876" height="216" key="GridCell.Tab.0.right" timestamp="1592704709520">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592703410872" />
+    <state width="1876" height="216" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592704709520" />
     <state width="1876" height="239" key="GridCell.Tab.1.bottom" timestamp="1592696381664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
