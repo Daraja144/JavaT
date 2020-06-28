@@ -14,19 +14,19 @@ public class ContactInfoTests extends TestBase{
   public void ensurePreconditions() {
     app.goTo().homePage();
     if (app.contact().all().size()==0) {
-        app.contact().create(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
+        app.contact().createInfo(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
               .withGroup("test1").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
               .withAddress("ddd"),false);
       }
     if (app.contact().all().size()!=0) {
       app.contact().deleteAllContacts();
-      app.contact().create(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
+      app.contact().createInfo(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
               .withGroup("test1").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
               .withAddress("ddd"),false);
     }
   }
 
-  @Test
+  @Test()
   public void testContactInfo () {
     app.goTo().homePage();
     ContactData contact = app.contact().all().iterator().next();

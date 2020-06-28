@@ -1,12 +1,29 @@
 [
   {
+    "id": 2147483647,
     "firstname": "firstname 0",
     "lastname": "lastname 0",
-    "group": "test 0"
+    "home": "home 0",
+    "mobile": "mobile 0",
+    "work": "work 0",
+    "group": "test1"
   },
   {
+    "id": 2147483647,
     "firstname": "firstname 1",
     "lastname": "lastname 1",
-    "group": "test 1"
+    "home": "home 1",
+    "mobile": "mobile 1",
+    "work": "work 1",
+    "group": "test1"
+  },
+  {
+    "id": 2147483647,
+    "firstname": "firstname 2",
+    "lastname": "lastname 2",
+    "home": "home 2",
+    "mobile": "mobile 2",
+    "work": "work 2",
+    "group": "test1"
   }
 ]

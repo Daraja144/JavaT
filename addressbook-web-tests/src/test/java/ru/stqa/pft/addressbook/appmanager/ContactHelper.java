@@ -20,22 +20,39 @@ public class ContactHelper extends HelperBase {
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
-  public void fillNewContactForm(ContactData newContactData, boolean creation) {
-    type(By.name("firstname"), newContactData.getFirstname());
-    type(By.name("lastname"), newContactData.getLastname());
-    type(By.name("address"), newContactData.getAddress());
-    type(By.name("email"), newContactData.getEmail());
-    type(By.name("email2"), newContactData.getEmail2());
-    type(By.name("email3"), newContactData.getEmail3());
-    type(By.name("home"), newContactData.getHomePhone());
-    type(By.name("mobile"), newContactData.getMobilePhone());
-    type(By.name("work"), newContactData.getWorkPhone());
-    attach(By.name("photo"), newContactData.getPhoto());
-
-
+  public void fillNewContactForm(ContactData ContactData, boolean creation) {
+    type(By.name("firstname"), ContactData.getFirstname());
+    type(By.name("lastname"), ContactData.getLastname());
+    //type(By.name("address"), ContactData.getAddress());
+    //type(By.name("email"), ContactData.getEmail());
+    //type(By.name("email2"), ContactData.getEmail2());
+    //type(By.name("email3"), ContactData.getEmail3());
+    type(By.name("home"), ContactData.getHomePhone());
+    type(By.name("mobile"), ContactData.getMobilePhone());
+    type(By.name("work"), ContactData.getWorkPhone());
+    //attach(By.name("photo"), ContactData.getPhoto());
 
     if (creation) {
-      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(newContactData.getGroup());
+      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(ContactData.getGroup());
+    } else {
+      Assert.assertFalse(isElementPresent(By.name("new_group")));
+    }
+  }
+
+  public void fillInfoContactForm(ContactData ContactData, boolean creation) {
+    type(By.name("firstname"), ContactData.getFirstname());
+    type(By.name("lastname"), ContactData.getLastname());
+    type(By.name("address"), ContactData.getAddress());
+    type(By.name("email"), ContactData.getEmail());
+    type(By.name("email2"), ContactData.getEmail2());
+    type(By.name("email3"), ContactData.getEmail3());
+    type(By.name("home"), ContactData.getHomePhone());
+    type(By.name("mobile"), ContactData.getMobilePhone());
+    type(By.name("work"), ContactData.getWorkPhone());
+    //attach(By.name("photo"), ContactData.getPhoto());
+
+    if (creation) {
+      new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(ContactData.getGroup());
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
@@ -84,6 +101,14 @@ public class ContactHelper extends HelperBase {
   public void create(ContactData contact, boolean b) {
     gotoAddNewPage();
     fillNewContactForm(contact,
+            true);
+    submitNewContactForm();
+    contactCache = null;
+    gotoHomePage();
+  }
+  public void createInfo(ContactData contact, boolean b) {
+    gotoAddNewPage();
+    fillInfoContactForm(contact,
             true);
     submitNewContactForm();
     contactCache = null;
