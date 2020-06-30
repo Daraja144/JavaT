@@ -7,7 +7,9 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @XStreamAlias("contact")
 @Entity
@@ -53,6 +55,7 @@ public class ContactData {
   @Transient
   @Expose
   private String group;
+
   @Transient
   private String address;
 
@@ -62,11 +65,15 @@ public class ContactData {
   private String allemails;
 
 
-
   @Transient
   @Column(name = "photo")
   @Type(type ="text")
   private String photo;
+
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"),
+          inverseJoinColumns = @JoinColumn(name = "group_id"))
+  private Set<GroupData> groups = new HashSet<GroupData>();
 
   public File getPhoto() {
     return new File(photo);
@@ -105,16 +112,12 @@ public class ContactData {
     return lastname;
   }
 
-  public String getGroup() { return group;
-  }
   public String getHomePhone() {
     return home;
   }
-
   public String getMobilePhone() {
     return mobile;
   }
-
   public String getWorkPhone() {
     return work;
   }
@@ -122,15 +125,18 @@ public class ContactData {
   public String getEmail() {
     return email;
   }
-  public String getAddress() {
-    return address;
-  }
   public String getEmail2() {
     return email2;
   }
-
   public String getEmail3() {
     return email3;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+  public Groups getGroups() {
+    return new Groups(groups);
   }
 
 
@@ -148,10 +154,6 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withGroup(String group) {
-    this.group = group;
-    return this;
-  }
   public ContactData withHomePhone(String home) {
     this.home = home;
     return this;
@@ -194,7 +196,6 @@ public class ContactData {
             ", email='" + email + '\'' +
             ", email2='" + email2 + '\'' +
             ", email3='" + email3 + '\'' +
-            ", group='" + group + '\'' +
             ", address='" + address + '\'' +
             '}';
   }
@@ -216,4 +217,8 @@ public class ContactData {
     return Objects.hash(id, firstname, lastname, home, mobile, work);
   }
 
+  public ContactData inGroup(GroupData group) {
+    groups.add(group);
+    return this;
+  }
 }

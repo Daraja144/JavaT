@@ -3,6 +3,8 @@ package ru.stqa.pft.addressbook.tests;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Groups;
+
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -12,16 +14,17 @@ public class ContactInfoTests extends TestBase{
 
   @BeforeMethod
   public void ensurePreconditions() {
+    Groups groups = app.db().groups();
     app.goTo().homePage();
     if (app.contact().all().size()==0) {
         app.contact().createInfo(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
-              .withGroup("test1").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
+              .inGroup(groups.iterator().next()).withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
               .withAddress("ddd"),false);
       }
     if (app.contact().all().size()!=0) {
       app.contact().deleteAllContacts();
       app.contact().createInfo(new ContactData().withFirstname("Daria").withLastname("Zamotorina")
-              .withGroup("test1").withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
+              .inGroup(groups.iterator().next()).withHomePhone("111").withMobilePhone("222").withWorkPhone("333").withEmail("aaa").withEmail2("bbb").withEmail3("ccc")
               .withAddress("ddd"),false);
     }
   }
