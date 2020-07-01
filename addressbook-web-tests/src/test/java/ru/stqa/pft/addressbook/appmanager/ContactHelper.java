@@ -7,6 +7,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.Groups;
+
 import java.util.List;
 
 public class ContactHelper extends HelperBase {
@@ -198,5 +200,10 @@ public class ContactHelper extends HelperBase {
 
   private void selectAll() {
     wd.findElement(By.id("MassCB")).click();
+  }
+  public void addToGroup() {
+    wd.findElement(By.name("to_group")).click();
+    new Select(wd.findElement(By.name("to_group"))).selectByValue("111");
+    wd.findElement(By.name("add")).click();
   }
 }

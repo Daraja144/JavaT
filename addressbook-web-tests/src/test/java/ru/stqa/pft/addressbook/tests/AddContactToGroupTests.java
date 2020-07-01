@@ -11,19 +11,13 @@ public class AddContactToGroupTests extends TestBase {
 
   @Test
   public void testAddContactToGroup() {
-    //Groups groups = app.db().groups();
-    Contacts before = app.db().contacts();
+    Contacts contacts = app.db().contacts();
+    Groups groups = app.db().groups();
     app.goTo().homePage();
-    ContactData selectedContact = before.iterator().next();
+    ContactData selectedContact = contacts.iterator().next();
     app.contact().selectContactById(selectedContact.getId());
 
-    wd.findElement(By.name("to_group")).click();
-    selectGroupFromList();
-    wd.findElement(By.name("add")).click();
-    wd.findElement(By.linkText("home")).click();
-  }
-
-  public void selectGroupFromList() {
-    new Select(wd.findElement(By.name("to_group"))).selectByValue("111");
+    app.contactHelper.addToGroup();
+    app.goTo().homePage();
   }
 }
