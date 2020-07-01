@@ -201,9 +201,10 @@ public class ContactHelper extends HelperBase {
   private void selectAll() {
     wd.findElement(By.id("MassCB")).click();
   }
+
   public void addToGroup() {
     wd.findElement(By.name("to_group")).click();
-    new Select(wd.findElement(By.name("to_group"))).selectByValue("111");
+    new Select(wd.findElement(By.name("to_group"))).selectByValue("");
     wd.findElement(By.name("add")).click();
   }
 }
