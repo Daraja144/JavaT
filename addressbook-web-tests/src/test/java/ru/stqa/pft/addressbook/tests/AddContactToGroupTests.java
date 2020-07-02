@@ -1,25 +1,20 @@
 package ru.stqa.pft.addressbook.tests;
 
-import org.hamcrest.CoreMatchers;
-import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
-
 import java.util.stream.Collectors;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class AddContactToGroupTests extends TestBase {
 
   @BeforeMethod
   public void ensurePreconditions() {
     if (app.db().contacts().size() == 0) {
+      app.goTo().homePage();
       app.contact().create(new ContactData()
               .withFirstname("Daria").withLastname("Zamotorina")
               .withHomePhone("11-11-11").withAddress("Haffmeister Rd.")
@@ -27,6 +22,7 @@ public class AddContactToGroupTests extends TestBase {
     }
 
     if (app.db().groups().size() == 0) {
+      app.goTo().groupPage();
       app.group().create(new GroupData().withName("test"));
     }
   }
@@ -54,7 +50,10 @@ public class AddContactToGroupTests extends TestBase {
     }
     contactChosen = contacts.iterator().next();
     System.out.println("This is the contact: " + contactChosen);
+
+    app.goTo().homePage();
     app.contact().addToGroup(contactChosen, group);
+
     int contactId = contactChosen.getId();
     System.out.println("This is the contact ID: " + contactId);
 
@@ -62,13 +61,14 @@ public class AddContactToGroupTests extends TestBase {
     Contacts updatedContacts = app.db().contacts();
     System.out.println("How many contacts after: " + updatedContacts.size());
 
+    for (ContactData contact : updatedContacts) {
 
-    Contacts updatedContact = new Contacts(app.db().contacts());
-    for (ContactData contact : contacts) {
+      if (contact.getId() == contactId) {
+        ContactData c = new ContactData().withId(contactId).withFirstname(contact.getFirstname()).withLastname(contact.getLastname()).inGroup(group);
+        System.out.println("Updated contact is: " + c);
 
+        Assert.assertTrue(c.getGroups().contains(group));
+      }
     }
-    System.out.println("Updated contact is " + updatedContact);
-
-    //assertThat(updatedContacts.getGroups().contains(group), equalTo(true));
   }
 }
