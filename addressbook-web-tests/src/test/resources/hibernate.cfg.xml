@@ -54,7 +54,6 @@
 
         <mapping class="ru.stqa.pft.addressbook.model.ContactData"/>
 
-
     </session-factory>
 
 </hibernate-configuration>

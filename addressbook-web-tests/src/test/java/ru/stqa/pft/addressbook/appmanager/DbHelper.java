@@ -10,6 +10,7 @@ import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
+import javax.persistence.Id;
 import java.security.acl.Group;
 import java.util.List;
 
@@ -23,6 +24,8 @@ public class DbHelper {
             .configure() // configures settings from hibernate.cfg.xml
             .build();
       sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+
+
   }
   public Groups groups() {
     Session session = sessionFactory.openSession();
@@ -46,8 +49,7 @@ public class DbHelper {
   public Contacts updatedContact(int id) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    //List<ContactData> result = session.createQuery("from ContactData" + "find_contact_by_id").list();
-    Contacts updatedContact = (Contacts) session.get(Contacts.class, id);
+    List<ContactData> updatedContact = session.createQuery("from ContactData" + "where id=" + id).list();
 
 
     session.getTransaction().commit();

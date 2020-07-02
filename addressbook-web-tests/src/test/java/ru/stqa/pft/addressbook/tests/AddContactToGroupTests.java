@@ -62,7 +62,11 @@ public class AddContactToGroupTests extends TestBase {
     Contacts updatedContacts = app.db().contacts();
     System.out.println("How many contacts after: " + updatedContacts.size());
 
-    Contacts updatedContact = app.db().updatedContact(contactId);
+
+    Contacts updatedContact = new Contacts(app.db().contacts());
+    for (ContactData contact : contacts) {
+
+    }
     System.out.println("Updated contact is " + updatedContact);
 
     //assertThat(updatedContacts.getGroups().contains(group), equalTo(true));

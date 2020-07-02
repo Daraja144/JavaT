@@ -10,6 +10,10 @@ import java.io.File;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @XStreamAlias("contact")
 @Entity
@@ -75,7 +79,8 @@ public class ContactData {
           inverseJoinColumns = @JoinColumn(name = "group_id"))
 
   public Set<GroupData> groups = new HashSet<GroupData>();
-  //private Set<ContactData> contacts = new HashSet<ContactData>();
+
+  //public Set<ContactData> contacts = new HashSet<ContactData>();
 
 
   public File getPhoto() {
