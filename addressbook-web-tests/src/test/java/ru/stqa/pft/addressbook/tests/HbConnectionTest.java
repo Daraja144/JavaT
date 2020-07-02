@@ -8,6 +8,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.List;
@@ -33,7 +34,7 @@ public class HbConnectionTest {
     }
   }
 
-  @Test
+  @Test(enabled = false)
   public void testHbConnection() {
 
     Session session = sessionFactory.openSession();
