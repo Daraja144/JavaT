@@ -1,5 +1,6 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
@@ -8,6 +9,9 @@ import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.stream.Collectors;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class DeleteContactFromGroupTests extends TestBase {
   @BeforeMethod
@@ -37,6 +41,7 @@ public class DeleteContactFromGroupTests extends TestBase {
 
     ContactData contact = app.db().contacts().iterator().next();
     int contactId = contact.getId();
+    System.out.println("Contact ID is: " + contactId);
 
     /*
     if (contact.getGroups().equals(groups)) {
@@ -48,10 +53,11 @@ public class DeleteContactFromGroupTests extends TestBase {
 
     app.goTo().homePage();
 
-    groups = new Groups(app.db().groups().stream().filter(g -> (g.getContacts().contains(contact))).collect(Collectors.toSet()));
 
     //int groupId = group.getId();
     //System.out.println("Group ID is: " + groupId);
+
+    groups = new Groups(app.db().groups().stream().filter(g -> (g.getContacts().contains(contact))).collect(Collectors.toSet()));
 
     GroupData groupNew = new GroupData().withName("777");
 
@@ -64,12 +70,12 @@ public class DeleteContactFromGroupTests extends TestBase {
     }
     //GroupData group = groups.iterator().next();
 
-
     app.goTo().homePage();
     app.contact().deleteFromGroup(contact, groupNew);
     System.out.println("Contact with ID " + contactId + " has been deleted from group " + groupNew.withName(groupNew.getName()));
 
-
+    Assert.assertFalse(groupNew.getContacts().contains(contact));
+    System.out.println("Contact has been deleted for sure!");
 
   }
 }

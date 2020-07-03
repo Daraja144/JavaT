@@ -67,7 +67,7 @@ public class AddContactToGroupTests extends TestBase {
         System.out.println("Updated contact is: " + c);
 
         Assert.assertTrue(c.getGroups().contains(group));
-
+        System.out.println("Contact has been added for sure!");
       }
     }
   }
