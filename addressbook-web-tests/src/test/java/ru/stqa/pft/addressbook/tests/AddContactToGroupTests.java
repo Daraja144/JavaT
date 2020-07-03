@@ -22,14 +22,12 @@ public class AddContactToGroupTests extends TestBase {
 
     if (app.db().groups().size() == 0) {
       app.goTo().groupPage();
-      app.group().create(new GroupData().withName("test"));
+      app.group().create(new GroupData().withName("pooo"));
     }
   }
 
   @Test
   public void testAddContactToGroup() {
-
-    GroupData groupChosen;
 
     Contacts contacts = app.db().contacts();
     System.out.println("How many contacts before: " + contacts.size());
@@ -39,18 +37,20 @@ public class AddContactToGroupTests extends TestBase {
 
     ContactData contact = app.db().contacts().iterator().next();
     int contactId = contact.getId();
+    GroupData groupChosen;
 
     if (contact.getGroups().equals(groups)) {
       app.goTo().groupPage();
-      groupChosen = new GroupData().withName("test");
+      groupChosen = new GroupData().withName("fooo");
       app.group().create(groupChosen);
     }
     app.goTo().homePage();
-    app.contact().selectContactById(contactId);
     GroupData group = app.db().groups().iterator().next();
-    if (!group.getContacts().contains(contact.withId(contactId))) {
+
+    if (!group.getContacts().equals(contact.withId(contactId))) {
       app.goTo().homePage();
       app.contact().addToGroup(contact, group);
+      System.out.println("Contact with ID " + contactId + " has been added to group " + group.getName());
     }
 
     app.goTo().homePage();
@@ -64,61 +64,9 @@ public class AddContactToGroupTests extends TestBase {
         System.out.println("Updated contact is: " + c);
 
         Assert.assertTrue(c.getGroups().contains(group));
+
       }
     }
   }
 }
 
-
-
-
-
-    /*contacts = new Contacts(app.db().contacts().
-           stream().filter(e -> (e.getGroups().isEmpty())).collect(Collectors.toSet()));
-    System.out.println("How many filtered contacts: " + contacts.size());
-
-    groups = new Groups(app.db().groups()
-            .stream().filter(g -> (g.getContacts().contains();
-    System.out.println("How many filtered groups: " + groups.size());
-    GroupData group = groups.iterator().next();
-
-    if (groups.isEmpty()) {
-      groupChosen = new GroupData().withName("test");
-      app.group().create(groupChosen);
-      groups = new Groups(app.db().groups()
-              .stream().filter(g -> (g.getContacts().isEmpty())).collect(Collectors.toSet()));
-    }
-    group = groups.iterator().next();
-    System.out.println("This is the group: " + group);
-
-GroupData group = new GroupData().withName("test");
-        app.goTo().groupPage();
-        app.group().create(group);
-
-
-    /*if (contacts.isEmpty()){
-      contactChosen = new ContactData().withFirstname("Daria").withLastname("Zamotorina");
-      app.contact().create(contactChosen, true);
-      contacts = new Contacts(app.db().contacts().
-              stream().filter(e -> (e.getGroups().isEmpty())).collect(Collectors.toSet()));
-    }
-    contactChosen = contacts.iterator().next();
-    System.out.println("This is the contact: " + contactChosen);
-
-    app.goTo().homePage();
-    app.contact().addToGroup(contactChosen, group);
-
-
-
-    app.goTo().homePage();
-    Contacts updatedContacts = app.db().contacts();
-    System.out.println("How many contacts after: " + updatedContacts.size());
-
-    for (ContactData contactFinal : updatedContacts) {
-
-      if (contactFinal.getId() == contactId) {
-        ContactData c = new ContactData().withId(contactId).withFirstname(contact.getFirstname()).withLastname(contact.getLastname()).inGroup(group);
-        System.out.println("Updated contact is: " + c);
-
-        Assert.assertTrue(c.getGroups().contains(group));
-      }}*/

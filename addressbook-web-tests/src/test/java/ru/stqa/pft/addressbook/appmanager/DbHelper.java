@@ -45,15 +45,4 @@ public class DbHelper {
     session.close();
     return new Contacts(result);
   }
-
-  public Contacts updatedContact(int id) {
-    Session session = sessionFactory.openSession();
-    session.beginTransaction();
-    List<ContactData> updatedContact = session.createQuery("from ContactData" + "where id=" + id).list();
-
-
-    session.getTransaction().commit();
-    session.close();
-    return new Contacts(updatedContact);
-  }
 }
