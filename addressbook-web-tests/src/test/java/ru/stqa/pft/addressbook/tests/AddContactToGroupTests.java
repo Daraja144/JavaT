@@ -7,7 +7,6 @@ import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
-import java.util.stream.Collectors;
 
 public class AddContactToGroupTests extends TestBase {
 
@@ -29,20 +28,75 @@ public class AddContactToGroupTests extends TestBase {
 
   @Test
   public void testAddContactToGroup() {
-    ContactData contactChosen;
-    Contacts contacts;
-    Contacts before = app.db().contacts();
-    System.out.println("How many contacts before: " + before.size());
+
+    GroupData groupChosen;
+
+    Contacts contacts = app.db().contacts();
+    System.out.println("How many contacts before: " + contacts.size());
 
     Groups groups = app.db().groups();
-    System.out.println("Hi Daria. Those are your groups:" + groups);
-    GroupData group = groups.iterator().next();
-    System.out.println("This is the group: " + group);
-    contacts = new Contacts(app.db().contacts().
-            stream().filter(e -> (e.getGroups().isEmpty())).collect(Collectors.toSet()));
+    System.out.println("How many groups before: " + groups.size());
+
+    ContactData contact = app.db().contacts().iterator().next();
+    int contactId = contact.getId();
+
+    if (contact.getGroups().equals(groups)) {
+      app.goTo().groupPage();
+      groupChosen = new GroupData().withName("test");
+      app.group().create(groupChosen);
+    }
+    app.goTo().homePage();
+    app.contact().selectContactById(contactId);
+    GroupData group = app.db().groups().iterator().next();
+    if (!group.getContacts().contains(contact.withId(contactId))) {
+      app.goTo().homePage();
+      app.contact().addToGroup(contact, group);
+    }
+
+    app.goTo().homePage();
+    Contacts updatedContacts = app.db().contacts();
+    System.out.println("How many contacts after: " + updatedContacts.size());
+
+    for (ContactData contactFinal : updatedContacts) {
+
+      if (contactFinal.getId() == contactId) {
+        ContactData c = new ContactData().withId(contactId).withFirstname(contact.getFirstname()).withLastname(contact.getLastname()).inGroup(group);
+        System.out.println("Updated contact is: " + c);
+
+        Assert.assertTrue(c.getGroups().contains(group));
+      }
+    }
+  }
+}
+
+
+
+
+
+    /*contacts = new Contacts(app.db().contacts().
+           stream().filter(e -> (e.getGroups().isEmpty())).collect(Collectors.toSet()));
     System.out.println("How many filtered contacts: " + contacts.size());
 
-    if (contacts.isEmpty()){
+    groups = new Groups(app.db().groups()
+            .stream().filter(g -> (g.getContacts().contains();
+    System.out.println("How many filtered groups: " + groups.size());
+    GroupData group = groups.iterator().next();
+
+    if (groups.isEmpty()) {
+      groupChosen = new GroupData().withName("test");
+      app.group().create(groupChosen);
+      groups = new Groups(app.db().groups()
+              .stream().filter(g -> (g.getContacts().isEmpty())).collect(Collectors.toSet()));
+    }
+    group = groups.iterator().next();
+    System.out.println("This is the group: " + group);
+
+GroupData group = new GroupData().withName("test");
+        app.goTo().groupPage();
+        app.group().create(group);
+
+
+    /*if (contacts.isEmpty()){
       contactChosen = new ContactData().withFirstname("Daria").withLastname("Zamotorina");
       app.contact().create(contactChosen, true);
       contacts = new Contacts(app.db().contacts().
@@ -54,21 +108,17 @@ public class AddContactToGroupTests extends TestBase {
     app.goTo().homePage();
     app.contact().addToGroup(contactChosen, group);
 
-    int contactId = contactChosen.getId();
-    System.out.println("This is the contact ID: " + contactId);
+
 
     app.goTo().homePage();
     Contacts updatedContacts = app.db().contacts();
     System.out.println("How many contacts after: " + updatedContacts.size());
 
-    for (ContactData contact : updatedContacts) {
+    for (ContactData contactFinal : updatedContacts) {
 
-      if (contact.getId() == contactId) {
+      if (contactFinal.getId() == contactId) {
         ContactData c = new ContactData().withId(contactId).withFirstname(contact.getFirstname()).withLastname(contact.getLastname()).inGroup(group);
         System.out.println("Updated contact is: " + c);
 
         Assert.assertTrue(c.getGroups().contains(group));
-      }
-    }
-  }
-}
+      }}*/
