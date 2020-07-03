@@ -45,13 +45,17 @@ public class AddContactToGroupTests extends TestBase {
       app.group().create(groupChosen);
     }
     app.goTo().homePage();
-    GroupData group = app.db().groups().iterator().next();
 
-    if (!group.getContacts().equals(contact.withId(contactId))) {
+    GroupData group = app.db().groups().iterator().next();
+    int groupId = group.getId();
+    System.out.println("Group ID is: " + groupId);
+
+    if (! group.getContacts().equals(contact)) {
       app.goTo().homePage();
       app.contact().addToGroup(contact, group);
-      System.out.println("Contact with ID " + contactId + " has been added to group " + group.getName());
+      System.out.println("Contact with ID " + contactId + " has been added to group " + group.withId(groupId));
     }
+
 
     app.goTo().homePage();
     Contacts updatedContacts = app.db().contacts();
