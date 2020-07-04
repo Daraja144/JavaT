@@ -1,5 +1,7 @@
 package ru.stqa.pft.addressbook.tests;
 
+import org.hamcrest.CoreMatchers;
+import org.hamcrest.MatcherAssert;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -39,34 +41,40 @@ public class AddContactToGroupTests extends TestBase {
 
     ContactData contact = app.db().contacts().iterator().next();
     int contactId = contact.getId();
-    GroupData groupChosen;
+    System.out.println("Chosen contact is the contact with ID: " + contactId);
 
     if (contact.getGroups().equals(groups)) {
       app.goTo().groupPage();
-      groupChosen = new GroupData().withName("fooo");
+      GroupData groupChosen = new GroupData().withName("fooo");
       app.group().create(groupChosen);
     }
 
     groups = new Groups(app.db().groups().stream().filter(g -> (! g.getContacts().contains(contact))).collect(Collectors.toSet()));
+    System.out.println("Filtered groups (do not contain selected contact): " + groups);
     GroupData group = groups.iterator().next();
     int groupId = group.getId();
     System.out.println("Group ID is: " + groupId);
+
+    Contacts contactsInGroupBefore = new Contacts(app.contact().getContactsInGroup(group));
+    System.out.println("Contacts in selected group: " + contactsInGroupBefore);
 
     app.goTo().homePage();
     app.contact().addToGroup(contact, group);
     System.out.println("Contact with ID " + contactId + " has been added to group " + group.withId(groupId));
 
-    app.goTo().homePage();
-    Contacts updatedContacts = app.db().contacts();
-    System.out.println("How many contacts after: " + updatedContacts.size());
+    Groups updatedGroups = app.db().groups();
+    System.out.println("How many groups after: " + updatedGroups.size());
 
-    for (ContactData contactFinal : updatedContacts) {
 
-      if (contactFinal.getId() == contactId) {
-        ContactData c = new ContactData().withId(contactId).withFirstname(contact.getFirstname()).withLastname(contact.getLastname()).inGroup(group);
-        System.out.println("Updated contact is: " + c);
 
-        Assert.assertTrue(c.getGroups().contains(group));
+    for (GroupData groupFinal : updatedGroups) {
+
+      if (groupFinal.getId() == groupId) {
+
+        Contacts contactsInGroupAfter = new Contacts(app.contact().getContactsInGroup(groupFinal));
+        System.out.println("Contacts in group after adding a contact: " + contactsInGroupAfter);
+
+        MatcherAssert.assertThat(contactsInGroupAfter, CoreMatchers.equalTo(contactsInGroupBefore.withAdded(contact)));
         System.out.println("Contact has been added for sure!");
       }
     }

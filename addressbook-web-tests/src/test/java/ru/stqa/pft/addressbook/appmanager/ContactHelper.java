@@ -217,5 +217,10 @@ public class ContactHelper extends HelperBase {
     new Select(wd.findElement(By.name("group"))).selectByVisibleText(group.getName());
     selectContactById(contact.getId());
     wd.findElement(By.name("remove")).click();
+
+  }
+
+  public Contacts getContactsInGroup(GroupData group) {
+    return new Contacts(group.getContacts());
   }
 }

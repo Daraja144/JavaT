@@ -10,6 +10,8 @@ import ru.stqa.pft.addressbook.model.Contacts;
 import ru.stqa.pft.addressbook.model.GroupData;
 import ru.stqa.pft.addressbook.model.Groups;
 
+import java.util.HashSet;
+import java.util.List;
 import java.util.stream.Collectors;
 
 public class DeleteContactFromGroupTests extends TestBase {
@@ -37,17 +39,17 @@ public class DeleteContactFromGroupTests extends TestBase {
     Contacts contacts = app.db().contacts();
     System.out.println("How many contacts before: " + contacts.size());
 
-    Groups groups = app.db().groups();
-    System.out.println("How many groups before: " + groups.size());
+    Groups groupsBefore = app.db().groups();
+    System.out.println("How many groups before: " + groupsBefore.size());
 
     ContactData contact = app.db().contacts().iterator().next();
     int contactId = contact.getId();
     System.out.println("Contact ID is: " + contactId);
 
-    groups = new Groups(app.db().groups().stream().filter(g -> (g.getContacts().contains(contact))).collect(Collectors.toSet()));
-    System.out.println("Filtered groups (contain selected contact): " + groups);
+    Groups groupsFiltered = new Groups(app.db().groups().stream().filter(g -> (g.getContacts().contains(contact))).collect(Collectors.toSet()));
+    System.out.println("Filtered groups (contain selected contact): " + groupsFiltered);
 
-    if (groups.isEmpty()) {
+    if (groupsFiltered.isEmpty()) {
 
       GroupData groupNew = new GroupData().withName("777");
       app.goTo().groupPage();
@@ -57,53 +59,34 @@ public class DeleteContactFromGroupTests extends TestBase {
       app.contact().addToGroup(contact, groupNew);
       System.out.println("Contact with ID " + contactId + " has been added to group " + groupNew.withName(groupNew.getName()));
 
-      groups = new Groups(app.db().groups().stream().filter(g -> (g.getContacts().contains(contact))).collect(Collectors.toSet()));
+      groupsFiltered = new Groups(app.db().groups().stream().filter(g -> (g.getContacts().contains(contact))).collect(Collectors.toSet()));
     }
-    group = groups.iterator().next();
+    group = groupsFiltered.iterator().next();
+    int groupId = group.getId();
     System.out.println("This is selected group: " + group);
+
+    Contacts contactsInGroupBefore = new Contacts(app.contact().getContactsInGroup(group));
+    System.out.println("Contacts in selected group: " + contactsInGroupBefore);
 
     app.goTo().homePage();
     app.contact().deleteFromGroup(contact, group);
+    System.out.println("Contact with ID " + contactId + " has been deleted from group " + group.withName(group.getName()));
 
     Groups updatedGroups = app.db().groups();
     System.out.println("How many groups after: " + updatedGroups.size());
 
-    MatcherAssert.assertThat(group.getContacts().contains(contact), CoreMatchers.equalTo(false));
-    System.out.println("Contact has been deleted for sure!");
+    for (GroupData groupFinal : updatedGroups) {
 
+      if (groupFinal.getId() == groupId) {
 
+        Contacts contactsInGroupAfter = new Contacts(app.contact().getContactsInGroup(groupFinal));
+        System.out.println("Contacts in group after deleting a contact: " + contactsInGroupAfter);
 
-
-
-
-
-
-
-
-
-      /*GroupData groupSelected = app.db().groups().iterator().next();
-      System.out.println("This is selected group: " + groupSelected);
-      app.goTo().homePage();
-      app.contact().deleteFromGroup(contact, groupSelected);
-
-      Groups updatedGroups = app.db().groups();
-      System.out.println("How many groups after: " + updatedGroups.size());
-
-
-
-
-
-      app.goTo().homePage();
-      app.contact().deleteFromGroup(contact, groupNew);
-      System.out.println("Contact with ID " + contactId + " has been deleted from group " + groupNew.withName(groupNew.getName()));
-
-      Groups updatedGroups = app.db().groups();
-      System.out.println("How many groups after: " + updatedGroups.size());
-      Assert.assertFalse(groupNew.getContacts().contains(contact));
-      System.out.println("Contact has been deleted for sure!");
-
-       */
+        MatcherAssert.assertThat(contactsInGroupAfter, CoreMatchers.equalTo(contactsInGroupBefore.without(contact)));
+        System.out.println("Contact has been deleted for sure!");
+      }
     }
   }
+}
 
 
