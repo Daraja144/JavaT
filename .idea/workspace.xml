@@ -20,24 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/ContactHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/appmanager/ContactHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/AddContactToGroupTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/out/test/classes/ru/stqa/pft/addressbook/tests/AddContactToGroupTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/AddContactToGroupTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteContactFromGroupTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/tests/DeleteContactFromGroupTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$/Sandbox">
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/addressbook-web-tests">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/mantis-tests">
       <ProjectState />
     </projectState>
   </component>
@@ -80,23 +82,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Sandbox/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mantis-tests/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.sandbox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\mantis-tests\src\test\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+      <recent name="ru.stqa.pft.mantis.tests" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.stqa.pft.addressbook.appmanager" />
       <recent name="ru.stqa.pft.addressbook" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
-      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.AddContactToGroupTests">
@@ -186,7 +195,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.ContactDataGenerator" />
-      <item itemvalue="TestNG.ContactCreationTests (1)" />
+      <item itemvalue="TestNG.ContactCreationTests" />
       <item itemvalue="TestNG.AddContactToGroupTests" />
       <item itemvalue="TestNG.DeleteContactFromGroupTests" />
       <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
@@ -194,7 +203,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.AddContactToGroupTests" />
-        <item itemvalue="TestNG.ContactCreationTests (1)" />
         <item itemvalue="TestNG.DeleteContactFromGroupTests" />
         <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
         <item itemvalue="Application.ContactDataGenerator" />
@@ -227,10 +235,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="93" key="#Project_Structure" timestamp="1590125629824">
+    <state x="440" y="93" key="#Project_Structure" timestamp="1594091820664">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1590125629824" />
+    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1594091820664" />
     <state x="690" y="273" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593361137889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -267,42 +275,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592003284808" />
-    <state x="740" y="228" key="FileChooserDialogImpl" timestamp="1593552182773">
+    <state x="740" y="228" key="FileChooserDialogImpl" timestamp="1594088362918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593552182773" />
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1593891054500">
+    <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594088362918" />
+    <state width="1876" height="297" key="GridCell.Tab.0.bottom" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593891054500" />
-    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1593891054500">
+    <state width="1876" height="297" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.0.center" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593891054500" />
-    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1593891054500">
+    <state width="1876" height="297" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.0.left" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593891054500" />
-    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1593891054500">
+    <state width="1876" height="297" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.0.right" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593891054500" />
-    <state width="1876" height="297" key="GridCell.Tab.1.bottom" timestamp="1593844418365">
+    <state width="1876" height="297" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.1.bottom" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="297" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593844418365" />
-    <state width="1876" height="297" key="GridCell.Tab.1.center" timestamp="1593844418365">
+    <state width="1876" height="297" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.1.center" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="297" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593844418365" />
-    <state width="1876" height="297" key="GridCell.Tab.1.left" timestamp="1593844418364">
+    <state width="1876" height="297" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.1.left" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="297" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593844418364" />
-    <state width="1876" height="297" key="GridCell.Tab.1.right" timestamp="1593844418365">
+    <state width="1876" height="297" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
+    <state width="1876" height="297" key="GridCell.Tab.1.right" timestamp="1594083297069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="297" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593844418365" />
+    <state width="1876" height="297" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594083297069" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -319,10 +327,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589733830601" />
-    <state x="633" y="157" key="SettingsEditor" timestamp="1591505056406">
+    <state x="633" y="157" key="SettingsEditor" timestamp="1594088562519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1591505056406" />
+    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594088562519" />
     <state x="797" y="296" key="chooseDestDirectoryDialog" timestamp="1589677357375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

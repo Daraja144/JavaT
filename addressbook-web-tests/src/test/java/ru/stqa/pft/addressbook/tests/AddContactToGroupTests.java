@@ -12,6 +12,9 @@ import ru.stqa.pft.addressbook.model.Groups;
 
 import java.util.stream.Collectors;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class AddContactToGroupTests extends TestBase {
 
   @BeforeMethod
@@ -66,7 +69,6 @@ public class AddContactToGroupTests extends TestBase {
     System.out.println("How many groups after: " + updatedGroups.size());
 
 
-
     for (GroupData groupFinal : updatedGroups) {
 
       if (groupFinal.getId() == groupId) {
@@ -74,7 +76,7 @@ public class AddContactToGroupTests extends TestBase {
         Contacts contactsInGroupAfter = new Contacts(app.contact().getContactsInGroup(groupFinal));
         System.out.println("Contacts in group after adding a contact: " + contactsInGroupAfter);
 
-        MatcherAssert.assertThat(contactsInGroupAfter, CoreMatchers.equalTo(contactsInGroupBefore.withAdded(contact)));
+        assertThat(contactsInGroupAfter, equalTo(contactsInGroupBefore.withAdded(contact)));
         System.out.println("Contact has been added for sure!");
       }
     }
