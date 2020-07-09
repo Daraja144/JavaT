@@ -25,7 +25,9 @@
       <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/RegistrationHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/appmanager/RegistrationHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/RegistrationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/RegistrationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/MailHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/MailHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/ChangePasswordTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/ChangePasswordTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -301,38 +303,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594088362918" />
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1594309018568">
+    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1594314747516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594309018568" />
-    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1594309018568">
+    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594314747516" />
+    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1594314747516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594309018568" />
-    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1594309018568">
+    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594314747516" />
+    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1594314747516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594309018568" />
-    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1594309018568">
+    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594314747516" />
+    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1594314747516">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594309018568" />
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594308368929">
+    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594314747516" />
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594314670553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594308368929" />
-    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594308368929">
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594314670553" />
+    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594314670553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594308368929" />
-    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594308368929">
+    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594314670553" />
+    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594314670553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594308368929" />
-    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594308368929">
+    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594314670553" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594314670553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594308368929" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594314670553" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

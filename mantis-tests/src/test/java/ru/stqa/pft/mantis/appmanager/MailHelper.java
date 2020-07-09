@@ -12,7 +12,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 public class MailHelper {
-  private final Wiser wiser;
+  private Wiser wiser;
   private ApplicationManager app;
 
   public MailHelper(ApplicationManager app) {

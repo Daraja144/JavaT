@@ -30,7 +30,7 @@ public class RegistrationHelper extends HelperBase {
     click(cssSelector("[type=submit]"));
   }
 
-  public void loginWithAdmin() {
+  public void loginAsAdmin() {
     type(name("username"), app.getProperty("web.adminLogin"));
     click(cssSelector("[type=submit]"));
     type(name("password"), app.getProperty("web.adminPassword"));
@@ -40,11 +40,11 @@ public class RegistrationHelper extends HelperBase {
   public HashMap<String, String> selectUser() {
     HashMap<String, String> result = new HashMap<>();
     app.getDriver().findElements(By.cssSelector("tbody [href]"))
-            .stream().filter(u -> !u.getText().equals("administrator")).collect(Collectors.toList())
+            .stream().filter(user -> !user.getText().equals("administrator")).collect(Collectors.toList())
             .get(0).click();
     result.put("user", app.getDriver().findElement(name("username")).getAttribute("value"));
     result.put("email", app.getDriver().findElement(name("email")).getAttribute("value"));
-    app.getDriver().findElement(By.cssSelector("[value='Reset password']")).click();
+    app.getDriver().findElement(By.cssSelector("[value='Reset Password']")).click();
     return result;
   }
 }
