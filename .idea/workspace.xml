@@ -19,7 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="" />
+    <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/SoapTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/SoapTests.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +33,9 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Rest-sample">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/Sandbox">
       <ProjectState />
     </projectState>
@@ -49,6 +56,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/mantis-tests">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/Rest-sample">
           <activation />
         </task>
         <projects_view>
@@ -84,62 +94,46 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Sandbox/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Soap-sample/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Rest-sample/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ru.stqa.pft.mantis.appmanager" />
-      <recent name="ru.stqa.pft.addressbook.appmanager" />
-      <recent name="ru.stqa.pft.addressbook" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.sandbox" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\Rest-sample\src\main\resources" />
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\mantis-tests\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.mantis.appmanager" />
       <recent name="ru.stqa.pft.mantis.tests" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
-      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.rest" />
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+      <recent name="ru.stqa.pft.addressbook.appmanager" />
+      <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SoapTests.testShowIssueStatus">
-    <configuration name="GeoIpServiceTests.testInvalidIp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Soap-sample.test" />
+  <component name="RunManager">
+    <configuration name="RestTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Rest-sample.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.soap.*" />
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.soap" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.soap.GeoIpServiceTests" />
-      <option name="METHOD_NAME" value="testInvalidIp" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoapTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -147,74 +141,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoapTests.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
-      <option name="METHOD_NAME" value="testCreateIssue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoapTests.testGetProjects" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
-      <option name="METHOD_NAME" value="testGetProjects" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SoapTests.testShowIssueStatus" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
-      <option name="METHOD_NAME" value="testShowIssueStatus" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="TestNG.GeoIpServiceTests.testInvalidIp" />
-      <item itemvalue="TestNG.SoapTests.testGetProjects" />
-      <item itemvalue="TestNG.SoapTests" />
-      <item itemvalue="TestNG.SoapTests.testCreateIssue" />
-      <item itemvalue="TestNG.SoapTests.testShowIssueStatus" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SoapTests.testShowIssueStatus" />
-        <item itemvalue="TestNG.SoapTests.testCreateIssue" />
-        <item itemvalue="TestNG.SoapTests" />
-        <item itemvalue="TestNG.SoapTests.testGetProjects" />
-        <item itemvalue="TestNG.GeoIpServiceTests.testInvalidIp" />
+        <item itemvalue="TestNG.RestTests" />
       </list>
     </recent_temporary>
   </component>
@@ -244,18 +173,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="93" key="#Project_Structure" timestamp="1594431313235">
+    <state x="586" y="197" key="#Inspections" timestamp="1594575242028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1594431313235" />
+    <state x="586" y="197" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1594575242028" />
+    <state x="440" y="93" key="#Project_Structure" timestamp="1594571656134">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="93" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1594571656134" />
     <state x="690" y="273" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1593361137889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="273" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593361137889" />
-    <state x="462" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594220161521">
+    <state x="462" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594570090131">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594220161521" />
+    <state x="462" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594570090131" />
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591665667322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -264,10 +197,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594176358746" />
-    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1594521709197">
+    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1594568348750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594521709197" />
+    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594568348750" />
     <state x="724" y="169" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1593575661700">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -296,42 +229,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="715" y="221" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1594226554343" />
-    <state x="740" y="228" key="FileChooserDialogImpl" timestamp="1594405212693">
+    <state x="740" y="228" key="FileChooserDialogImpl" timestamp="1594565651611">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594405212693" />
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1594522230933">
+    <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594565651611" />
+    <state width="1876" height="262" key="GridCell.Tab.0.bottom" timestamp="1594576546257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594522230933" />
-    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1594522230933">
+    <state width="1876" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546257" />
+    <state width="1876" height="262" key="GridCell.Tab.0.center" timestamp="1594576546256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594522230933" />
-    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1594522230933">
+    <state width="1876" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546256" />
+    <state width="1876" height="262" key="GridCell.Tab.0.left" timestamp="1594576546256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594522230933" />
-    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1594522230933">
+    <state width="1876" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546256" />
+    <state width="1876" height="262" key="GridCell.Tab.0.right" timestamp="1594576546256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594522230933" />
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594522210734">
+    <state width="1876" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546256" />
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594576546257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594522210734" />
-    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594522210734">
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546257" />
+    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594576546257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594522210734" />
-    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594522210734">
+    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546257" />
+    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594576546257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594522210734" />
-    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594522210734">
+    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546257" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594576546257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594522210734" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594576546257" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -348,10 +281,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="670" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589733830601" />
-    <state x="633" y="157" key="SettingsEditor" timestamp="1594431490663">
+    <state x="633" y="157" key="SettingsEditor" timestamp="1594570023104">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594431490663" />
+    <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594570023104" />
     <state x="797" y="296" key="chooseDestDirectoryDialog" timestamp="1589677357375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -364,10 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="644" y="260" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594514564971" />
-    <state x="536" y="203" key="new project wizard" timestamp="1594405094569">
+    <state x="536" y="203" key="new project wizard" timestamp="1594565629561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="536" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1594405094569" />
+    <state x="536" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1594565629561" />
     <state x="666" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1591049023892">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
