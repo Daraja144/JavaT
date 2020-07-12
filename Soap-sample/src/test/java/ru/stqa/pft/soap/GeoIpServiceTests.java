@@ -1,7 +1,6 @@
 package ru.stqa.pft.soap;
 
 import com.lavasoft.GeoIPService;
-import com.lavasoft.GeoIPServiceSoap;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -9,9 +8,13 @@ public class GeoIpServiceTests {
 
   @Test
   public void testMyIp() {
-    GeoIPService geoIPService = new GeoIPService.GeoIPServiceSoap12().getCountryNameByISO2("192.168.43.97");
+    String countryName = new GeoIPService().getGeoIPServiceSoap12().getCountryNameByISO2("192.168.43.97");
+    Assert.assertEquals(countryName, "<GeoIP><Country>UNITED STATES</Country></GeoIP>");
+  }
 
-    Assert.assertEquals();
-
+  @Test
+  public void testInvalidIp() {
+    String countryNameByISO2 = new GeoIPService().getGeoIPServiceSoap12().getCountryNameByISO2("xxx.xxx.xx.xx");
+    Assert.assertEquals(countryNameByISO2, "<GeoIP><Country>UNITED STATES</Country></GeoIP>");
   }
 }
