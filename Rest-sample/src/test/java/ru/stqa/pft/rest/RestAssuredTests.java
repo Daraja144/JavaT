@@ -1,8 +1,6 @@
 package ru.stqa.pft.rest;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonParser;
-import com.jayway.restassured.RestAssured;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -11,6 +9,11 @@ import java.util.Set;
 import static org.testng.Assert.assertEquals;
 
 public class RestAssuredTests extends TestBase{
+
+  @BeforeMethod
+  public void before() throws IOException {
+    skipIfNotFixed(45);
+  }
 
   @Test
   public void testCreateIssue() throws IOException, InterruptedException {
@@ -22,30 +25,10 @@ public class RestAssuredTests extends TestBase{
     assertEquals(newIssues, oldIssues);
   }
 
-  /*private Executor getExecutor() {
-    return Executor.newInstance().auth("288f44776e7bec4bf44fdfeb1e646490", "");
-  }*/
-
-  private int createIssue(Issue newIssue) throws IOException {
-
-    /*String json = getExecutor().execute(Request.Post("https://bugify.stqa.ru/api/issues.json")
-            .bodyForm(new BasicNameValuePair("subject", newIssue.getSubject()),
-                    new BasicNameValuePair("description", newIssue.getDescription())))
-            .returnContent().asString();*/
-
-    String json = RestAssured.given()
-            .parameter("subject", newIssue.getSubject())
-            .parameter("description", newIssue.getDescription())
-            .post("https://bugify.stqa.ru/api/issues.json").asString();
-    JsonElement parsed = new JsonParser().parse(json);
-    return parsed.getAsJsonObject().get("issue_id").getAsInt();
-
-  }
-
   @Test
-  public void testGetIssueStatus() throws IOException {
-    String issueStatus = getIssueStatus(0);
-    System.out.println("Issue status is: " + issueStatus);
+  public void testIsIssueClosed() throws IOException {
+    boolean issueClosed = isIssueClosed(45);
+    System.out.println("Issue is closed: " + issueClosed);
   }
 
 }

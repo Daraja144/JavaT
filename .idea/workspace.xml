@@ -22,9 +22,12 @@
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/RestAssuredTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/RestAssuredTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,18 +131,35 @@
       <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestAssuredTests.testGetIssueStatus">
-    <configuration name="RegistrationTests.testRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
+  <component name="RunManager" selected="TestNG.RestAssuredTests">
+    <configuration name="RestAssuredTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Rest-sample.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
-      <option name="METHOD_NAME" value="testRegistration" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Rest-sample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
+      <option name="METHOD_NAME" value="testCreateIssue" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,7 +185,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RestAssuredTests.testGetIssuesClosed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Rest-sample.test" />
       <extension name="coverage">
         <pattern>
@@ -174,8 +194,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
+      <option name="METHOD_NAME" value="testGetIssuesClosed" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.testIsIssueClosed" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Rest-sample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
+      <option name="METHOD_NAME" value="testIsIssueClosed" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -184,9 +223,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RestAssuredTests" />
+        <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed" />
+        <item itemvalue="TestNG.RestAssuredTests.testGetIssuesClosed" />
         <item itemvalue="TestNG.RestAssuredTests.testGetIssueStatus" />
-        <item itemvalue="TestNG.RestTests" />
-        <item itemvalue="TestNG.RegistrationTests.testRegistration" />
+        <item itemvalue="TestNG.RestAssuredTests.testCreateIssue" />
       </list>
     </recent_temporary>
   </component>
@@ -276,38 +317,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594565651611" />
-    <state width="1876" height="262" key="GridCell.Tab.0.bottom" timestamp="1594787008519">
+    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1594833790902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
-    <state width="1876" height="262" key="GridCell.Tab.0.center" timestamp="1594787008519">
+    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790902" />
+    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1594833790901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
-    <state width="1876" height="262" key="GridCell.Tab.0.left" timestamp="1594787008519">
+    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790901" />
+    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1594833790901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
-    <state width="1876" height="262" key="GridCell.Tab.0.right" timestamp="1594787008519">
+    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790901" />
+    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1594833790902">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594787009778">
+    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790902" />
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594833171464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
-    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594787009778">
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594833171464" />
+    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594833171464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
-    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594787009778">
+    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594833171464" />
+    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594833171464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
-    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594787009778">
+    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594833171464" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594833171464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594833171464" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -328,6 +369,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="633" y="157" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594570023104" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1594832004897">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594832004897" />
     <state x="797" y="296" key="chooseDestDirectoryDialog" timestamp="1589677357375">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
