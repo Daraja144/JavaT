@@ -27,7 +27,9 @@ public class TestBase {
 
   @BeforeSuite
   public void init() throws IOException {
-    RestAssured.authentication = RestAssured.basic(properties.getProperty("api-key"), "");
+    //RestAssured.authentication = RestAssured.basic(properties.getProperty("api-key"), "");
+    RestAssured.authentication = RestAssured.basic("288f44776e7bec4bf44fdfeb1e646490", "");
+
     String target = System.getProperty("target", "local");
     properties.load(new FileReader(new File(format("src/test/resources/%s.properties", target))));
   }
@@ -41,6 +43,7 @@ public class TestBase {
 
   public Set<Issue> getIssuesClosed() throws IOException {
     String json = RestAssured.get((properties.getProperty("rest_assured.api")) + "/filters/3/issues.json").asString();
+
     JsonElement parsed = new JsonParser().parse(json);
     JsonElement issues = parsed.getAsJsonObject().get("issues");
     return new Gson().fromJson(issues, new TypeToken<Set<Issue>>(){}.getType());
