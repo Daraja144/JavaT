@@ -27,11 +27,9 @@ public class TestBase {
 
   @BeforeSuite
   public void init() throws IOException {
-    RestAssured.authentication = RestAssured.basic(properties.getProperty("api-key"), "");
-    //RestAssured.authentication = RestAssured.basic("288f44776e7bec4bf44fdfeb1e646490", "");
-
     String target = System.getProperty("target", "local");
     properties.load(new FileReader(new File(format("src/test/resources/%s.properties", target))));
+    RestAssured.authentication = RestAssured.basic(properties.getProperty("api-key"),"");
   }
 
 
