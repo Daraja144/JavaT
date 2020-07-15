@@ -21,16 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/out/production/resources/local.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/RestTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/RestTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/src/main/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +128,7 @@
       <recent name="ru.stqa.pft.addressbook" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestTests">
+  <component name="RunManager" selected="TestNG.RestAssuredTests.testGetIssueStatus">
     <configuration name="RegistrationTests.testRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
@@ -146,6 +140,24 @@
       <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
       <option name="METHOD_NAME" value="testRegistration" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RestAssuredTests.testGetIssueStatus" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Rest-sample.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
+      <option name="METHOD_NAME" value="testGetIssueStatus" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -172,6 +184,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RestAssuredTests.testGetIssueStatus" />
         <item itemvalue="TestNG.RestTests" />
         <item itemvalue="TestNG.RegistrationTests.testRegistration" />
       </list>
@@ -227,14 +240,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594176358746" />
-    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1594568348750">
+    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1594785000726">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594568348750" />
-    <state x="724" y="169" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1593575661700">
+    <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594785000726" />
+    <state x="724" y="169" key="#com.intellij.refactoring.memberPullUp.PullUpDialog" timestamp="1594784228275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="724" y="169" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593575661700" />
+    <state x="724" y="169" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594784228275" />
     <state x="563" y="443" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590338120303">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -263,38 +276,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594565651611" />
-    <state width="1876" height="262" key="GridCell.Tab.0.bottom" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.0.bottom" timestamp="1594787008519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
-    <state width="1876" height="262" key="GridCell.Tab.0.center" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
+    <state width="1876" height="262" key="GridCell.Tab.0.center" timestamp="1594787008519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
-    <state width="1876" height="262" key="GridCell.Tab.0.left" timestamp="1594770171048">
+    <state width="1876" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
+    <state width="1876" height="262" key="GridCell.Tab.0.left" timestamp="1594787008519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171048" />
-    <state width="1876" height="262" key="GridCell.Tab.0.right" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
+    <state width="1876" height="262" key="GridCell.Tab.0.right" timestamp="1594787008519">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594787008519" />
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594787009778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
-    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
+    <state width="1876" height="262" key="GridCell.Tab.1.center" timestamp="1594787009778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
-    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
+    <state width="1876" height="262" key="GridCell.Tab.1.left" timestamp="1594787009778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
-    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594770171049">
+    <state width="1876" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right" timestamp="1594787009778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594770171049" />
+    <state width="1876" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594787009778" />
     <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
