@@ -21,13 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/Issue.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/RestAssuredTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/RestAssuredTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/classes/ru/stqa/pft/rest/TestBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/Issue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/out/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/out/test/resources/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/RestAssuredTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/rest/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/resources/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/SoapTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/out/test/classes/ru/stqa/pft/mantis/tests/SoapTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,24 +151,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTests.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Rest-sample.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
-      <option name="METHOD_NAME" value="testCreateIssue" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RestAssuredTests.testGetIssueStatus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Rest-sample.test" />
       <extension name="coverage">
@@ -221,13 +205,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SoapTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mantis-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RestAssuredTests" />
+        <item itemvalue="TestNG.SoapTests" />
         <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed" />
         <item itemvalue="TestNG.RestAssuredTests.testGetIssuesClosed" />
         <item itemvalue="TestNG.RestAssuredTests.testGetIssueStatus" />
-        <item itemvalue="TestNG.RestAssuredTests.testCreateIssue" />
       </list>
     </recent_temporary>
   </component>
@@ -317,22 +318,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594565651611" />
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1594833790902">
+    <state width="1876" height="339" key="GridCell.Tab.0.bottom" timestamp="1594842640497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790902" />
-    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1594833790901">
+    <state width="1876" height="339" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594842640497" />
+    <state width="1876" height="339" key="GridCell.Tab.0.center" timestamp="1594842640497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790901" />
-    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1594833790901">
+    <state width="1876" height="339" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594842640497" />
+    <state width="1876" height="339" key="GridCell.Tab.0.left" timestamp="1594842640497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790901" />
-    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1594833790902">
+    <state width="1876" height="339" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594842640497" />
+    <state width="1876" height="339" key="GridCell.Tab.0.right" timestamp="1594842640497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594833790902" />
+    <state width="1876" height="339" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594842640497" />
     <state width="1876" height="262" key="GridCell.Tab.1.bottom" timestamp="1594833171464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -389,10 +390,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="536" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1594565629561" />
-    <state x="666" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1591049023892">
+    <state x="666" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1594840533743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="276" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591049023892" />
+    <state x="666" y="276" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594840533743" />
     <state x="616" y="235" key="run.anything.popup" timestamp="1593731494401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

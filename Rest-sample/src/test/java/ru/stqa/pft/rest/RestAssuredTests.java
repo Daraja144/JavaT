@@ -1,6 +1,6 @@
 package ru.stqa.pft.rest;
 
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
@@ -10,7 +10,11 @@ import static org.testng.Assert.assertEquals;
 
 public class RestAssuredTests extends TestBase{
 
-  @BeforeMethod
+  public RestAssuredTests() {
+    super();
+  }
+
+  @BeforeSuite
   public void before() throws IOException {
     skipIfNotFixed(45);
   }

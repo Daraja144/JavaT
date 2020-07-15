@@ -8,24 +8,39 @@ import com.jayway.restassured.RestAssured;
 import org.testng.SkipException;
 import org.testng.annotations.BeforeSuite;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Properties;
 import java.util.Set;
+
+import static java.lang.String.format;
 
 public class TestBase {
 
-  @BeforeSuite
-  public void init() {
-    RestAssured.authentication = RestAssured.basic("288f44776e7bec4bf44fdfeb1e646490", "");
+  private final Properties properties;
+
+  public TestBase() {
+    properties = new Properties();
   }
+
+
+  @BeforeSuite
+  public void init() throws IOException {
+    RestAssured.authentication = RestAssured.basic(properties.getProperty("api-key"), "");
+    String target = System.getProperty("target", "local");
+    properties.load(new FileReader(new File(format("src/test/resources/%s.properties", target))));
+  }
+
+
   public void skipIfNotFixed(int issueId) throws IOException {
     if (! isIssueClosed(issueId)) {
       throw new SkipException("Ignored because of issue " + issueId);
     }
   }
 
-
   public Set<Issue> getIssuesClosed() throws IOException {
-    String json = RestAssured.get("https://bugify.stqa.ru/api/filters/3/issues.json").asString();
+    String json = RestAssured.get((properties.getProperty("rest_assured.api")) + "/filters/3/issues.json").asString();
     JsonElement parsed = new JsonParser().parse(json);
     JsonElement issues = parsed.getAsJsonObject().get("issues");
     return new Gson().fromJson(issues, new TypeToken<Set<Issue>>(){}.getType());
@@ -41,13 +56,11 @@ public class TestBase {
     return false;
   }
 
-
-
   public Set<Issue> getIssues() throws IOException {
 
     //String json = getExecutor().execute(Request.Get("https://bugify.stqa.ru/api/issues.json")).returnContent().asString();
 
-    String json = RestAssured.get("https://bugify.stqa.ru/api/issues.json").asString();
+    String json = RestAssured.get((properties.getProperty("rest_assured.api")) + "/issues.json").asString();
     JsonElement parsed = new JsonParser().parse(json);
     JsonElement issues = parsed.getAsJsonObject().get("issues");
 
@@ -64,7 +77,7 @@ public class TestBase {
     String json = RestAssured.given()
             .parameter("subject", newIssue.getSubject())
             .parameter("description", newIssue.getDescription())
-            .post("https://bugify.stqa.ru/api/issues.json").asString();
+            .post((properties.getProperty("rest_assured.api")) + "/issues.json").asString();
     JsonElement parsed = new JsonParser().parse(json);
     return parsed.getAsJsonObject().get("issue_id").getAsInt();
 
