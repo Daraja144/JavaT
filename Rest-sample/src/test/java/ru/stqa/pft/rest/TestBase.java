@@ -48,11 +48,10 @@ public class TestBase {
   }
 
   public boolean isIssueClosed(int issueId) throws IOException {
-    Set<Issue> issuesClosed = getIssuesClosed();
-    for (Issue issue : issuesClosed) {
-      if (issue.getId() == issueId) {
-        return true;
-      }
+    String json = RestAssured.get((properties.getProperty("rest_assured.api")) + "/issues/" + issueId + ".json").asString();
+    //JsonElement parsed = new JsonParser().parse(json);
+    if (json.contains("Closed")) {
+      return true;
     }
     return false;
   }

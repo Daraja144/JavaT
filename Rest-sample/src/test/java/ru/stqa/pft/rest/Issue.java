@@ -7,6 +7,9 @@ public class Issue {
   private String subject;
   private String description;
 
+  public String getStatus() {
+    return status;
+  }
 
   @Override
   public boolean equals(Object o) {
@@ -15,13 +18,21 @@ public class Issue {
     Issue issue = (Issue) o;
     return id == issue.id &&
             Objects.equals(subject, issue.subject) &&
-            Objects.equals(description, issue.description);
+            Objects.equals(description, issue.description) &&
+            Objects.equals(status, issue.status);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, subject, description);
+    return Objects.hash(id, subject, description, status);
   }
+
+  public Issue withStatus(String status) {
+    this.status = status;
+    return this;
+  }
+
+  private String status;
 
 
   public int getId() {

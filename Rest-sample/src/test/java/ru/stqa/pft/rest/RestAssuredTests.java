@@ -14,7 +14,7 @@ public class RestAssuredTests extends TestBase{
     super();
   }
 
-  @BeforeSuite
+  @BeforeSuite(enabled = true)
   public void before() throws IOException {
     skipIfNotFixed(45);
   }
@@ -31,8 +31,10 @@ public class RestAssuredTests extends TestBase{
 
   @Test
   public void testIsIssueClosed() throws IOException {
-    boolean issueClosed = isIssueClosed(45);
+    boolean issueClosed = isIssueClosed(1);
     System.out.println("Issue is closed: " + issueClosed);
   }
+
+
 
 }
