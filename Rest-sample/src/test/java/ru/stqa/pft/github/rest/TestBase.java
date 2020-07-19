@@ -34,7 +34,7 @@ public class TestBase {
 
 
   public void skipIfNotFixed(int issueId) throws IOException {
-    if (! isIssueClosed(issueId)) {
+    if (isIssueOpen(issueId)) {
       throw new SkipException("Ignored because of issue " + issueId);
     }
   }
@@ -47,13 +47,11 @@ public class TestBase {
     return new Gson().fromJson(issues, new TypeToken<Set<Issue>>(){}.getType());
   }
 
-  public boolean isIssueClosed(int issueId) throws IOException {
+  public boolean isIssueOpen(int issueId) throws IOException {
     String json = RestAssured.get((properties.getProperty("rest_assured.api")) + "/issues/" + issueId + ".json").asString();
-    //JsonElement parsed = new JsonParser().parse(json);
-    if (json.contains("Closed")) {
-      return true;
-    }
-    return false;
+    JsonElement parsed = JsonParser.parseString(json);
+    String status = parsed.getAsJsonObject().get("issues").getAsJsonArray().get(0).getAsJsonObject().get("state_name").getAsString();
+    return !status.equals("Closed");
   }
 
   public Set<Issue> getIssues() throws IOException {

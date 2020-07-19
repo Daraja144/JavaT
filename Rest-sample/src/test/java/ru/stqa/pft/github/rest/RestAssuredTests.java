@@ -30,11 +30,9 @@ public class RestAssuredTests extends TestBase{
   }
 
   @Test
-  public void testIsIssueClosed() throws IOException {
-    boolean issueClosed = isIssueClosed(1);
-    System.out.println("Issue is closed: " + issueClosed);
+  public void testIsIssueOpen() throws IOException {
+    boolean issueOpen = isIssueOpen(1);
+    System.out.println("Issue is open: " + issueOpen);
   }
-
-
 
 }
