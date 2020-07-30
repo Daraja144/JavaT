@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/tests/AddContactToGroupTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/tests/AddContactToGroupTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +132,23 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.ru.stqa.pft.github.addressbook.tests">
+    <configuration name="ContactInfoTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.github.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.github.addressbook.tests.ContactInfoTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GithubTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="github-sample.test" />
       <extension name="coverage">
@@ -161,23 +176,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.github.rest" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.github.rest.RestAssuredTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RestAssuredTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Rest-sample.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -220,19 +218,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.RestAssuredTests" />
       <item itemvalue="TestNG.GithubTests" />
       <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed (1)" />
       <item itemvalue="TestNG.RestAssuredTests (1)" />
       <item itemvalue="TestNG.ru.stqa.pft.github.addressbook.tests" />
+      <item itemvalue="TestNG.ContactInfoTests" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ru.stqa.pft.github.addressbook.tests" />
+        <item itemvalue="TestNG.ContactInfoTests" />
         <item itemvalue="TestNG.RestAssuredTests (1)" />
         <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed (1)" />
         <item itemvalue="TestNG.GithubTests" />
-        <item itemvalue="TestNG.RestAssuredTests" />
       </list>
     </recent_temporary>
   </component>
@@ -322,22 +320,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594928244978" />
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom" timestamp="1595172604217">
+    <state width="1876" height="313" key="GridCell.Tab.0.bottom" timestamp="1596070541341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595172604217" />
-    <state width="1876" height="313" key="GridCell.Tab.0.center" timestamp="1595172604217">
+    <state width="1876" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596070541341" />
+    <state width="1876" height="313" key="GridCell.Tab.0.center" timestamp="1596070541341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595172604217" />
-    <state width="1876" height="313" key="GridCell.Tab.0.left" timestamp="1595172604217">
+    <state width="1876" height="313" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596070541341" />
+    <state width="1876" height="313" key="GridCell.Tab.0.left" timestamp="1596070541340">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595172604217" />
-    <state width="1876" height="313" key="GridCell.Tab.0.right" timestamp="1595172604217">
+    <state width="1876" height="313" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596070541340" />
+    <state width="1876" height="313" key="GridCell.Tab.0.right" timestamp="1596070541341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595172604217" />
+    <state width="1876" height="313" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596070541341" />
     <state width="1876" height="336" key="GridCell.Tab.1.bottom" timestamp="1594926175239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
