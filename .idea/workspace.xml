@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/tests/AddContactToGroupTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/tests/AddContactToGroupTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +133,7 @@
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.RestAssuredTests">
+  <component name="RunManager" selected="TestNG.ru.stqa.pft.github.addressbook.tests">
     <configuration name="GithubTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="github-sample.test" />
       <extension name="coverage">
@@ -201,18 +203,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTests.testIsIssueClosed" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Rest-sample.test" />
+    <configuration name="ru.stqa.pft.github.addressbook.tests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.*" />
+          <option name="PATTERN" value="ru.stqa.pft.github.addressbook.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.RestAssuredTests" />
-      <option name="METHOD_NAME" value="testIsIssueClosed" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.addressbook.tests" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -221,18 +221,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.RestAssuredTests" />
-      <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed" />
       <item itemvalue="TestNG.GithubTests" />
       <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed (1)" />
       <item itemvalue="TestNG.RestAssuredTests (1)" />
+      <item itemvalue="TestNG.ru.stqa.pft.github.addressbook.tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ru.stqa.pft.github.addressbook.tests" />
         <item itemvalue="TestNG.RestAssuredTests (1)" />
         <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed (1)" />
         <item itemvalue="TestNG.GithubTests" />
         <item itemvalue="TestNG.RestAssuredTests" />
-        <item itemvalue="TestNG.RestAssuredTests.testIsIssueClosed" />
       </list>
     </recent_temporary>
   </component>

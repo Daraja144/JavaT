@@ -30,7 +30,7 @@ public class AddContactToGroupTests extends TestBase {
     }
   }
 
-  @Test
+  @Test(enabled = false)
   public void testAddContactToGroup() {
 
     Contacts contacts = app.db().contacts();
