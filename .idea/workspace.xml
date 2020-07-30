@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
-    </list>
+    <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
