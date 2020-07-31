@@ -1,0 +1,94 @@
+{
+  "uid" : "a3e8aaa065985a98",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "historyId" : "9b88c2b32655367a85b11f6d2f7e31ce",
+  "time" : {
+    "start" : 1596224410833,
+    "stop" : 1596224412287,
+    "duration" : 1454
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "13d206f41df1aa83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163612035,
+        "stop" : 1596163614185,
+        "duration" : 2150
+      }
+    }, {
+      "uid" : "4da30782dfceb14a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163479425,
+        "stop" : 1596163481160,
+        "duration" : 1735
+      }
+    }, {
+      "uid" : "87cdf3dc6d06622a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163177493,
+        "stop" : 1596163179321,
+        "duration" : 1828
+      }
+    }, {
+      "uid" : "c616cb1498aaefe2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163092147,
+        "stop" : 1596163094229,
+        "duration" : 2082
+      }
+    }, {
+      "uid" : "cec3fbae1e356a8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596162910056,
+        "stop" : 1596162911790,
+        "duration" : 1734
+      }
+    }, {
+      "uid" : "2a82fb2956ba79b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596156505093,
+        "stop" : 1596156506610,
+        "duration" : 1517
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a3e8aaa065985a98.json",
+  "parameterValues" : [ ]
+}

@@ -1,5 +1,43 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: \nExpected: <[ContactData{id=348, firstname='firstname 1', lastname='lastname 1', home='home 1', mobile='mobile 1', work='777', email='null', email2='null', email3='null', address='null'}]>\n     but: was <[]>",
+      "children" : [ {
+        "name" : "testAddContactToGroup",
+        "uid" : "4606f51f709e2271",
+        "parentUid" : "fc96e6cf46e6e45441d5da76258adde2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1596163217221,
+          "stop" : 1596163218066,
+          "duration" : 845
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fc96e6cf46e6e45441d5da76258adde2"
+    }, {
+      "name" : "AssertionError: \nExpected: <35>\n     but: was <[GroupData{id='226', name='test 0'}, GroupData{id='249', name='test 2'}, GroupData{id='228', name='test 2'}, GroupData{id='247', name='test 0'}, GroupData{id='253', name='test 0'}, GroupData{id='255', name='test 2'}, GroupData{id='257', name='test 1'}, GroupData{id='215', name='test 1'}, GroupData{id='239', name='test 1'}, GroupData{id='252', name='test1'}, GroupData{id='221', name='test 1'}, GroupData{id='256', name='test1'}, GroupData{id='241', name='test 0'}, GroupData{id='231', name='test 2'}, GroupData{id='243', name='test 2'}, GroupData{id='196', name='333'}, GroupData{id='229', name='test 0'}, GroupData{id='246', name='test1'}, GroupData{id='233', name='test 1'}, GroupData{id='195', name='test1'}, GroupData{id='227', name='test 1'}, GroupData{id='237', name='test1'}, GroupData{id='248', name='test 1'}, GroupData{id='254', name='test 1'}, GroupData{id='216', name='test 2'}, GroupData{id='214', name='test 0'}, GroupData{id='238', name='test 0'}, GroupData{id='258', name='test 2'}, GroupData{id='220', name='test 0'}, GroupData{id='245', name='test1'}, GroupData{id='242', name='test 1'}, GroupData{id='230', name='test 1'}, GroupData{id='240', name='test 2'}, GroupData{id='234', name='test 2'}, GroupData{id='194', name='111'}, GroupData{id='232', name='test 0'}]>",
+      "children" : [ {
+        "name" : "testBadGroupCreation",
+        "uid" : "57672651b088f971",
+        "parentUid" : "febda275e8ff9038559593bedc20c4c4",
+        "status" : "failed",
+        "time" : {
+          "start" : 1596224407227,
+          "stop" : 1596224410745,
+          "duration" : 3518
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "febda275e8ff9038559593bedc20c4c4"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
 }

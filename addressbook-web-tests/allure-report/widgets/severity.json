@@ -1,51 +1,71 @@
 [ {
-  "uid" : "1df32d26da9ea762",
-  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
-  "time" : {
-    "start" : 1596156506693,
-    "stop" : 1596156507619,
-    "duration" : 926
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6ab217159d8432ff",
-  "name" : "testGroupModification",
-  "time" : {
-    "start" : 1596156508697,
-    "stop" : 1596156509842,
-    "duration" : 1145
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "221dd7c7f395b21b",
+  "uid" : "fea3d2465b2e040e",
   "name" : "testGroupDeletion",
   "time" : {
-    "start" : 1596156509871,
-    "stop" : 1596156510459,
-    "duration" : 588
+    "start" : 1596224415416,
+    "stop" : 1596224415949,
+    "duration" : 533
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "78e49b6c19db78ec",
-  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
+  "uid" : "57672651b088f971",
+  "name" : "testBadGroupCreation",
   "time" : {
-    "start" : 1596156507623,
-    "stop" : 1596156508657,
-    "duration" : 1034
+    "start" : 1596224407227,
+    "stop" : 1596224410745,
+    "duration" : 3518
   },
-  "status" : "passed",
+  "status" : "failed",
   "severity" : "normal"
 }, {
-  "uid" : "ae9b374498c7f62e",
+  "uid" : "a3e8aaa065985a98",
   "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
   "time" : {
-    "start" : 1596156505093,
-    "stop" : 1596156506610,
-    "duration" : 1517
+    "start" : 1596224410833,
+    "stop" : 1596224412287,
+    "duration" : 1454
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1eb582df5cb17be4",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
+  "time" : {
+    "start" : 1596224413202,
+    "stop" : 1596224414220,
+    "duration" : 1018
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "edccad9a1ef50d7b",
+  "name" : "testGroupModification",
+  "time" : {
+    "start" : 1596224414260,
+    "stop" : 1596224415384,
+    "duration" : 1124
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c5cb032d1a4036b",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
+  "time" : {
+    "start" : 1596224412292,
+    "stop" : 1596224413200,
+    "duration" : 908
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4606f51f709e2271",
+  "name" : "testAddContactToGroup",
+  "time" : {
+    "start" : 1596163217221,
+    "stop" : 1596163218066,
+    "duration" : 845
+  },
+  "status" : "failed",
   "severity" : "normal"
 } ]

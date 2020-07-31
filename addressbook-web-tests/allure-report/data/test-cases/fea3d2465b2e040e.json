@@ -1,0 +1,94 @@
+{
+  "uid" : "fea3d2465b2e040e",
+  "name" : "testGroupDeletion",
+  "fullName" : "Suite1.testGroupDeletion",
+  "historyId" : "e101216fa8723edd2179ce53a68f50e2",
+  "time" : {
+    "start" : 1596224415416,
+    "stop" : 1596224415949,
+    "duration" : 533
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testGroupDeletion"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "db5484023c0199e8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163618205,
+        "stop" : 1596163619124,
+        "duration" : 919
+      }
+    }, {
+      "uid" : "363565035acded65",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163484648,
+        "stop" : 1596163485324,
+        "duration" : 676
+      }
+    }, {
+      "uid" : "7ae43c2d947eac72",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163182903,
+        "stop" : 1596163183477,
+        "duration" : 574
+      }
+    }, {
+      "uid" : "6da736af5d19bcf5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163097914,
+        "stop" : 1596163098495,
+        "duration" : 581
+      }
+    }, {
+      "uid" : "aa94ff87bb485f64",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596162915517,
+        "stop" : 1596162916069,
+        "duration" : 552
+      }
+    }, {
+      "uid" : "7ee4038067f9bccd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596156509871,
+        "stop" : 1596156510459,
+        "duration" : 588
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fea3d2465b2e040e.json",
+  "parameterValues" : [ ]
+}

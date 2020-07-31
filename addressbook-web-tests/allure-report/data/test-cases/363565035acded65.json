@@ -1,0 +1,44 @@
+{
+  "uid" : "363565035acded65",
+  "name" : "testGroupDeletion",
+  "fullName" : "Suite1.testGroupDeletion",
+  "historyId" : "e101216fa8723edd2179ce53a68f50e2",
+  "time" : {
+    "start" : 1596163484648,
+    "stop" : 1596163485324,
+    "duration" : 676
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testGroupDeletion"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "363565035acded65.json",
+  "parameterValues" : [ ]
+}

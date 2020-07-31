@@ -1,0 +1,94 @@
+{
+  "uid" : "edccad9a1ef50d7b",
+  "name" : "testGroupModification",
+  "fullName" : "Suite1.testGroupModification",
+  "historyId" : "a596366c8a120eff2aa9f528643a4dd5",
+  "time" : {
+    "start" : 1596224414260,
+    "stop" : 1596224415384,
+    "duration" : 1124
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Suite1"
+  }, {
+    "name" : "testClass",
+    "value" : "Suite1"
+  }, {
+    "name" : "testMethod",
+    "value" : "testGroupModification"
+  }, {
+    "name" : "package",
+    "value" : "Suite1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cd21b43f60000ae1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163616919,
+        "stop" : 1596163618162,
+        "duration" : 1243
+      }
+    }, {
+      "uid" : "926af664eed36732",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163483377,
+        "stop" : 1596163484612,
+        "duration" : 1235
+      }
+    }, {
+      "uid" : "6bdea0a72aade774",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163181658,
+        "stop" : 1596163182867,
+        "duration" : 1209
+      }
+    }, {
+      "uid" : "935697fb09c59177",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596163096682,
+        "stop" : 1596163097880,
+        "duration" : 1198
+      }
+    }, {
+      "uid" : "fa7908ee4d9a0c43",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596162914224,
+        "stop" : 1596162915483,
+        "duration" : 1259
+      }
+    }, {
+      "uid" : "89e78f22f0e1c05a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1596156508697,
+        "stop" : 1596156509842,
+        "duration" : 1145
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "edccad9a1ef50d7b.json",
+  "parameterValues" : [ ]
+}

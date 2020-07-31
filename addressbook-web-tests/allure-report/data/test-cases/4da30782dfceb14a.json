@@ -1,12 +1,12 @@
 {
-  "uid" : "221dd7c7f395b21b",
-  "name" : "testGroupDeletion",
-  "fullName" : "Suite1.testGroupDeletion",
-  "historyId" : "e101216fa8723edd2179ce53a68f50e2",
+  "uid" : "4da30782dfceb14a",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "historyId" : "9b88c2b32655367a85b11f6d2f7e31ce",
   "time" : {
-    "start" : 1596156509871,
-    "stop" : 1596156510459,
-    "duration" : 588
+    "start" : 1596163479425,
+    "stop" : 1596163481160,
+    "duration" : 1735
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,7 +23,7 @@
     "value" : "Suite1"
   }, {
     "name" : "testMethod",
-    "value" : "testGroupDeletion"
+    "value" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]"
   }, {
     "name" : "package",
     "value" : "Suite1"
@@ -33,14 +33,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "221dd7c7f395b21b.json",
+  "source" : "4da30782dfceb14a.json",
   "parameterValues" : [ ]
 }

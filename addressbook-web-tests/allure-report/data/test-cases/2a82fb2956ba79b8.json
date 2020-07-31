@@ -1,12 +1,12 @@
 {
-  "uid" : "78e49b6c19db78ec",
-  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
-  "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
-  "historyId" : "cdd117b5adff5249664be947c1e20248",
+  "uid" : "2a82fb2956ba79b8",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "fullName" : "Suite1.testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "historyId" : "9b88c2b32655367a85b11f6d2f7e31ce",
   "time" : {
-    "start" : 1596156507623,
-    "stop" : 1596156508657,
-    "duration" : 1034
+    "start" : 1596156505093,
+    "stop" : 1596156506610,
+    "duration" : 1517
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -23,7 +23,7 @@
     "value" : "Suite1"
   }, {
     "name" : "testMethod",
-    "value" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]"
+    "value" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]"
   }, {
     "name" : "package",
     "value" : "Suite1"
@@ -33,14 +33,12 @@
   } ],
   "parameters" : [ ],
   "links" : [ ],
-  "hidden" : false,
-  "retry" : false,
+  "hidden" : true,
+  "retry" : true,
   "extra" : {
-    "severity" : "normal",
-    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "78e49b6c19db78ec.json",
+  "source" : "2a82fb2956ba79b8.json",
   "parameterValues" : [ ]
 }
