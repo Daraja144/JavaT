@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1596162909865" stop="1596162916072">
+    <name>Suite1</name>
+    <test-cases>
+        <test-case start="1596162910056" stop="1596162911790" status="passed">
+            <name>testGroupCreation[GroupData{id='2147483647', name='test 0'}]</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1596162911893" stop="1596162913044" status="passed">
+            <name>testGroupCreation[GroupData{id='2147483647', name='test 1'}]</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1596162913048" stop="1596162914177" status="passed">
+            <name>testGroupCreation[GroupData{id='2147483647', name='test 2'}]</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1596162914224" stop="1596162915483" status="passed">
+            <name>testGroupModification</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+        <test-case start="1596162915517" stop="1596162916069" status="passed">
+            <name>testGroupDeletion</name>
+            <steps/>
+            <attachments/>
+            <labels/>
+        </test-case>
+    </test-cases>
+    <labels/>
+</ns2:test-suite>

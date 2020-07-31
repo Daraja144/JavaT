@@ -5,6 +5,10 @@ repositories {
 	mavenCentral()
 }
 
+configurations {
+	agent
+}
+
 dependencies {
 	implementation 'org.testng:testng:7.1.0'
 	implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
@@ -15,8 +19,11 @@ dependencies {
 	implementation 'com.walterjwhite.java.dependencies:logback-classic:0.0.17'
 	implementation 'mysql:mysql-connector-java:8.0.20'
 	implementation 'org.hibernate:hibernate-core:5.4.18.Final'
-
+	agent "org.aspectj:aspectjweaver:1.8.0"
+	compile "ru.yandex.qatools.allure:allure-testng-adaptor:1.4.0.RC4"
 }
+
+
  task testGroups(type: Test) {
 	 useTestNG() {
 		 suites 'src/test/resources/testngGroups.xml'
@@ -34,6 +41,11 @@ dependencies {
 		 systemProperty 'verifyUI', "${verifyUI}"
 	 }
  }
+
+testGroups.doFirst {
+	jvmArgs "-javaagent:${configurations.agent.singleFile}"
+}
+
 task testContacts(type: Test) {
 	useTestNG() {
 		suites 'src/test/resources/testngContacts.xml'
@@ -48,3 +60,7 @@ task testContacts(type: Test) {
 		systemProperty 'verifyUI', "${verifyUI}"
 	}
 }
+
+
+
+

@@ -1,0 +1,51 @@
+[ {
+  "uid" : "1df32d26da9ea762",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 1'}]",
+  "time" : {
+    "start" : 1596156506693,
+    "stop" : 1596156507619,
+    "duration" : 926
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6ab217159d8432ff",
+  "name" : "testGroupModification",
+  "time" : {
+    "start" : 1596156508697,
+    "stop" : 1596156509842,
+    "duration" : 1145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "221dd7c7f395b21b",
+  "name" : "testGroupDeletion",
+  "time" : {
+    "start" : 1596156509871,
+    "stop" : 1596156510459,
+    "duration" : 588
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78e49b6c19db78ec",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 2'}]",
+  "time" : {
+    "start" : 1596156507623,
+    "stop" : 1596156508657,
+    "duration" : 1034
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae9b374498c7f62e",
+  "name" : "testGroupCreation[GroupData{id='2147483647', name='test 0'}]",
+  "time" : {
+    "start" : 1596156505093,
+    "stop" : 1596156506610,
+    "duration" : 1517
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

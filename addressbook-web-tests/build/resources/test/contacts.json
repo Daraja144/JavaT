@@ -1,12 +1,42 @@
 [
   {
+    "id": 2147483647,
     "firstname": "firstname 0",
     "lastname": "lastname 0",
-    "group": "test 0"
+    "home": "home 0",
+    "mobile": "mobile 0",
+    "work": "work 0"
   },
   {
+    "id": 2147483647,
     "firstname": "firstname 1",
     "lastname": "lastname 1",
-    "group": "test 1"
+    "home": "home 1",
+    "mobile": "mobile 1",
+    "work": "work 1"
+  },
+  {
+    "id": 2147483647,
+    "firstname": "firstname 2",
+    "lastname": "lastname 2",
+    "home": "home 2",
+    "mobile": "mobile 2",
+    "work": "work 2"
+  },
+  {
+    "id": 2147483647,
+    "firstname": "firstname 3",
+    "lastname": "lastname 3",
+    "home": "home 3",
+    "mobile": "mobile 3",
+    "work": "work 3"
+  },
+  {
+    "id": 2147483647,
+    "firstname": "firstname 4",
+    "lastname": "lastname 4",
+    "home": "home 4",
+    "mobile": "mobile 4",
+    "work": "work 4"
   }
 ]
