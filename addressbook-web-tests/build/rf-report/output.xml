@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generator="Robot 3.2.1 (Jython 2.7.2 on java1.8.0_251)" generated="20200801 16:27:49.625">
+<suite source="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src\test\resources\rf" name="Rf" id="s1">
+<suite source="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src\test\resources\rf\groups.robot" name="Groups" id="s1-s1">
+<kw type="setup" library="ru.stqa.pft.github.addressbook.rf.AddressbookKeywords" name="Init Application Manager">
+<msg level="INFO" timestamp="20200801 16:27:55.368">Starting ChromeDriver 84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}) on port 19798
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+org.openqa.selenium.remote.ProtocolHandshake INFO Detected dialect: W3C</msg>
+<status endtime="20200801 16:27:55.371" starttime="20200801 16:27:50.322" status="PASS"></status>
+</kw>
+<test name="Can Create Group With Valid Data" id="s1-s1-t1">
+<kw library="ru.stqa.pft.github.addressbook.rf.AddressbookKeywords" name="Get Group Count">
+<assign>
+<var>${old_count}</var>
+</assign>
+<msg level="INFO" timestamp="20200801 16:27:55.680">${old_count} = 42</msg>
+<status endtime="20200801 16:27:55.682" starttime="20200801 16:27:55.381" status="PASS"></status>
+</kw>
+<kw library="ru.stqa.pft.github.addressbook.rf.AddressbookKeywords" name="Create Group">
+<arguments>
+<arg>test name</arg>
+<arg>test header</arg>
+<arg>test footer</arg>
+</arguments>
+<status endtime="20200801 16:27:56.640" starttime="20200801 16:27:55.683" status="PASS"></status>
+</kw>
+<kw library="ru.stqa.pft.github.addressbook.rf.AddressbookKeywords" name="Get Group Count">
+<assign>
+<var>${new_count}</var>
+</assign>
+<msg level="INFO" timestamp="20200801 16:27:56.802">${new_count} = 43</msg>
+<status endtime="20200801 16:27:56.804" starttime="20200801 16:27:56.642" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Evaluate">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${old_count} + 1</arg>
+</arguments>
+<assign>
+<var>${expected_count}</var>
+</assign>
+<msg level="INFO" timestamp="20200801 16:27:56.818">${expected_count} = 43</msg>
+<status endtime="20200801 16:27:56.819" starttime="20200801 16:27:56.806" status="PASS"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be Equal As Integers">
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<arguments>
+<arg>${new_count}</arg>
+<arg>${expected_count}</arg>
+</arguments>
+<status endtime="20200801 16:27:56.831" starttime="20200801 16:27:56.820" status="PASS"></status>
+</kw>
+<status critical="yes" endtime="20200801 16:27:56.832" starttime="20200801 16:27:55.374" status="PASS"></status>
+</test>
+<kw type="teardown" library="ru.stqa.pft.github.addressbook.rf.AddressbookKeywords" name="Stop Application Manager">
+<status endtime="20200801 16:27:57.593" starttime="20200801 16:27:56.838" status="PASS"></status>
+</kw>
+<status endtime="20200801 16:27:57.598" starttime="20200801 16:27:49.953" status="PASS"></status>
+</suite>
+<status endtime="20200801 16:27:57.609" starttime="20200801 16:27:49.645" status="PASS"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" name="Rf" id="s1">Rf</stat>
+<stat pass="1" fail="0" name="Groups" id="s1-s1">Rf.Groups</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -8,6 +8,8 @@ import java.io.IOException;
 
 public class AddressbookKeywords {
 
+  public static final String ROBOT_LIBRARY_SCOPE = "GLOBAL";
+
   private ApplicationManager app;
 
   public void initApplicationManager() throws IOException {
