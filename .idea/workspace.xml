@@ -21,56 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/behaviors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/behaviors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/categories.csv" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/categories.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/packages.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/packages.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/suites.csv" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/suites.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/test-cases/1df32d26da9ea762.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/test-cases/221dd7c7f395b21b.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/test-cases/6ab217159d8432ff.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/test-cases/78e49b6c19db78ec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/test-cases/ae9b374498c7f62e.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/timeline.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/data/timeline.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/export/influxDbData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/export/influxDbData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/export/prometheusData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/export/prometheusData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/history.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/history.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/history/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/behaviors.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/behaviors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/categories-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/categories-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/categories.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/categories.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/duration-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/duration-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/duration.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/duration.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/history-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/history-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/retry-trend.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/retry-trend.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/severity.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/severity.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/status-chart.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/status-chart.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/suites.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/suites.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/summary.json" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/allure-report/widgets/summary.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/github/addressbook/tests/GroupCreationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/github/addressbook/tests/GroupCreationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.github.addressbook.tests.GroupCreationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.github.addressbook.tests.GroupCreationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.github.addressbook.tests.GroupDeletionTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.github.addressbook.tests.GroupDeletionTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.github.addressbook.tests.GroupModificationTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/classes/ru.stqa.pft.github.addressbook.tests.GroupModificationTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.github.addressbook.tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testGroups/packages/ru.stqa.pft.github.addressbook.tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.github.addressbook.tests.GroupCreationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.github.addressbook.tests.GroupCreationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.github.addressbook.tests.GroupDeletionTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.github.addressbook.tests.GroupDeletionTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.github.addressbook.tests.GroupModificationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.github.addressbook.tests.GroupModificationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/output.bin.idx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,10 +284,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591665667322" />
-    <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594176358746">
+    <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596302905054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594176358746" />
+    <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596302905054" />
     <state x="727" y="219" key="#com.intellij.ide.util.MemberChooser" timestamp="1596161669417">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -370,22 +324,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594928244978" />
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom" timestamp="1596163209424">
+    <state width="1876" height="313" key="GridCell.Tab.0.bottom" timestamp="1596255803168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596163209424" />
-    <state width="1876" height="313" key="GridCell.Tab.0.center" timestamp="1596163209423">
+    <state width="1876" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803168" />
+    <state width="1876" height="313" key="GridCell.Tab.0.center" timestamp="1596255803168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596163209423" />
-    <state width="1876" height="313" key="GridCell.Tab.0.left" timestamp="1596163209423">
+    <state width="1876" height="313" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803168" />
+    <state width="1876" height="313" key="GridCell.Tab.0.left" timestamp="1596255803167">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596163209423" />
-    <state width="1876" height="313" key="GridCell.Tab.0.right" timestamp="1596163209424">
+    <state width="1876" height="313" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803167" />
+    <state width="1876" height="313" key="GridCell.Tab.0.right" timestamp="1596255803168">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596163209424" />
+    <state width="1876" height="313" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803168" />
     <state width="1876" height="336" key="GridCell.Tab.1.bottom" timestamp="1594926175239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
