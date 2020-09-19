@@ -21,10 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f19dfb8c-a6fc-4648-b96b-b160663820ab" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/github/rest/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rest-sample/src/test/java/ru/stqa/pft/github/rest/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sandbox/src/main/java/HelloWorld.class" beforeDir="false" afterPath="$PROJECT_DIR$/Sandbox/src/main/java/ru/stqa/pft/sandbox/HelloWorld.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/appmanager/DbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/appmanager/DbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/tests/ContactCreationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/github/addressbook/tests/ContactCreationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,23 +129,24 @@
       <recent name="ru.stqa.pft.mantis.tests" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\Sandbox\src\main\java\ru\stqa\pft\sandbox" />
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\Rest-sample\src\test" />
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\Soap-sample\src\test" />
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests" />
       <recent name="D:\SQA\JavaForTesters\MyRepository\JavaT\addressbook-web-tests\src" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupTests">
-    <configuration name="AddContactToGroupTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+  <component name="RunManager" selected="TestNG.StringsTests.testFindElement">
+    <configuration name="StringsTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.github.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.github.addressbook.tests.AddContactToGroupTests" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.StringsTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -153,67 +154,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactInfoTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+    <configuration name="StringsTests.testCharTwoE" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.github.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.github.addressbook.tests.ContactInfoTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.StringsTests" />
+      <option name="METHOD_NAME" value="testCharTwoE" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+    <configuration name="StringsTests.testFindElement" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.github.addressbook.bdd.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.addressbook.bdd" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.github.addressbook.bdd.GroupTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.StringsTests" />
+      <option name="METHOD_NAME" value="testFindElement" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTests (1)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Rest-sample.test" />
+    <configuration name="StringsTests.testFindSmallest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.github.rest.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.rest" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.github.rest.RestAssuredTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.StringsTests" />
+      <option name="METHOD_NAME" value="testFindSmallest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.stqa.pft.github.addressbook.tests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
+    <configuration name="StringsTests.testTwoE" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Sandbox.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.github.addressbook.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.github.addressbook.tests" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.StringsTests" />
+      <option name="METHOD_NAME" value="testTwoE" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -221,19 +227,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.RestAssuredTests (1)" />
-      <item itemvalue="TestNG.ru.stqa.pft.github.addressbook.tests" />
-      <item itemvalue="TestNG.ContactInfoTests" />
-      <item itemvalue="TestNG.AddContactToGroupTests" />
-      <item itemvalue="TestNG.GroupTests" />
+      <item itemvalue="TestNG.StringsTests" />
+      <item itemvalue="TestNG.StringsTests.testTwoE" />
+      <item itemvalue="TestNG.StringsTests.testCharTwoE" />
+      <item itemvalue="TestNG.StringsTests.testFindSmallest" />
+      <item itemvalue="TestNG.StringsTests.testFindElement" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GroupTests" />
-        <item itemvalue="TestNG.AddContactToGroupTests" />
-        <item itemvalue="TestNG.ru.stqa.pft.github.addressbook.tests" />
-        <item itemvalue="TestNG.ContactInfoTests" />
-        <item itemvalue="TestNG.RestAssuredTests (1)" />
+        <item itemvalue="TestNG.StringsTests.testFindElement" />
+        <item itemvalue="TestNG.StringsTests.testFindSmallest" />
+        <item itemvalue="TestNG.StringsTests.testCharTwoE" />
+        <item itemvalue="TestNG.StringsTests.testTwoE" />
+        <item itemvalue="TestNG.StringsTests" />
       </list>
     </recent_temporary>
   </component>
@@ -279,10 +285,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="215" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1595967123434" />
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591665667322">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591665667322" />
     <state x="726" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596317840681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -295,18 +297,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="724" y="169" key="#com.intellij.refactoring.memberPullUp.PullUpDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594784228275" />
-    <state x="563" y="443" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590338120303">
+    <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597463260229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="563" y="443" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590338120303" />
-    <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592172863652">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592172863652" />
-    <state x="743" y="355" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog" timestamp="1591048758294">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="743" y="355" key="#com.intellij.refactoring.move.moveInstanceMethod.MoveInstanceMethodDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591048758294" />
+    <state x="743" y="383" width="476" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1597463260229" />
     <state x="585" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592003284808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -323,54 +317,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="228" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594928244978" />
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom" timestamp="1596255803168">
+    <state width="1876" height="313" key="GridCell.Tab.0.bottom" timestamp="1600490113001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803168" />
-    <state width="1876" height="313" key="GridCell.Tab.0.center" timestamp="1596255803168">
+    <state width="1876" height="313" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600490113001" />
+    <state width="1876" height="313" key="GridCell.Tab.0.center" timestamp="1600490113001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803168" />
-    <state width="1876" height="313" key="GridCell.Tab.0.left" timestamp="1596255803167">
+    <state width="1876" height="313" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600490113001" />
+    <state width="1876" height="313" key="GridCell.Tab.0.left" timestamp="1600490113001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803167" />
-    <state width="1876" height="313" key="GridCell.Tab.0.right" timestamp="1596255803168">
+    <state width="1876" height="313" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600490113001" />
+    <state width="1876" height="313" key="GridCell.Tab.0.right" timestamp="1600490113001">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="313" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596255803168" />
-    <state width="1876" height="336" key="GridCell.Tab.1.bottom" timestamp="1594926175239">
+    <state width="1876" height="313" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600490113001" />
+    <state width="1876" height="253" key="GridCell.Tab.1.bottom" timestamp="1600487501569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="336" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594926175239" />
-    <state width="1876" height="336" key="GridCell.Tab.1.center" timestamp="1594926175239">
+    <state width="1876" height="253" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600487501569" />
+    <state width="1876" height="253" key="GridCell.Tab.1.center" timestamp="1600487501569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="336" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594926175239" />
-    <state width="1876" height="336" key="GridCell.Tab.1.left" timestamp="1594926175239">
+    <state width="1876" height="253" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600487501569" />
+    <state width="1876" height="253" key="GridCell.Tab.1.left" timestamp="1600487501568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="336" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594926175239" />
-    <state width="1876" height="336" key="GridCell.Tab.1.right" timestamp="1594926175239">
+    <state width="1876" height="253" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600487501568" />
+    <state width="1876" height="253" key="GridCell.Tab.1.right" timestamp="1600487501569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="336" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594926175239" />
-    <state x="540" y="261" key="IDE.errors.dialog" timestamp="1590116916642">
+    <state width="1876" height="253" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600487501569" />
+    <state x="540" y="261" key="IDE.errors.dialog" timestamp="1596432954092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590116916642" />
-    <state x="633" y="150" key="RefactorJ.IntroduceParameterObject" timestamp="1590192943828">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="633" y="150" key="RefactorJ.IntroduceParameterObject/0.0.1920.1040@0.0.1920.1040" timestamp="1590192943828" />
-    <state x="1098" y="284" key="ReplaceDuplicatesPrompt" timestamp="1590524951416">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1098" y="284" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1590524951416" />
-    <state x="670" y="221" key="RollbackChangesDialog" timestamp="1589733830601">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="670" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589733830601" />
+    <state x="540" y="261" key="IDE.errors.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596432954092" />
     <state x="633" y="157" key="SettingsEditor" timestamp="1595969331059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -379,14 +361,6 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="968" height="528" key="XDebugger.FullValuePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1594925625488" />
-    <state x="797" y="296" key="chooseDestDirectoryDialog" timestamp="1589677357375">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="797" y="296" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589677357375" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1589766883968">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589766883968" />
     <state x="721" y="347" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1596161425526">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -399,10 +373,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="536" y="203" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1594565629561" />
-    <state x="666" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1594840533743">
+    <state x="666" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1596412994349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="666" y="276" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594840533743" />
+    <state x="666" y="276" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596412994349" />
     <state x="616" y="235" key="run.anything.popup" timestamp="1593731494401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

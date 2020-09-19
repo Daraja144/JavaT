@@ -67,11 +67,6 @@ public class TestBase {
 
   public int createIssue(Issue newIssue) throws IOException {
 
-    /*String json = getExecutor().execute(Request.Post("https://bugify.stqa.ru/api/issues.json")
-            .bodyForm(new BasicNameValuePair("subject", newIssue.getSubject()),
-                    new BasicNameValuePair("description", newIssue.getDescription())))
-            .returnContent().asString();*/
-
     String json = RestAssured.given()
             .parameter("subject", newIssue.getSubject())
             .parameter("description", newIssue.getDescription())
