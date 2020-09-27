@@ -5,31 +5,6 @@ import org.testng.annotations.Test;
 
 public class StringsTests {
 
-  /* Make a string out of text by enclosing it in double quotes "like this",
-  and use + to combine strings to make bigger strings. For this example,
-  the withNo() method takes in a string and returns a new string with "No:" added at the front. */
-
-  public String withNo(String str) {
-    return str + " No";
-  }
-
-  @Test
-  public void testWithNo() {
-    String s = "mama mia";
-    String newS = withNo(s);
-    System.out.println(newS);
-  }
-
-    /* With a string, str.substring(i, j) returns the String that starts at index i and goes up to but not including j.
-    The first char in the String is at index 0, so str.substring(0, 2) returns a string of the first two chars.
-    The method str.length() returns the length of a string. Compare two strings like this: str1.equals(str2).
-    Do not compare two strings with == which looks reasonable but does not work correctly in all cases.
-    This twoE() example method returns true if the string contains exactly two 'e' chars. The code:
-    "for (int i=0; i<str.length(); i++) { ..." is very standard code to look at each position in a String.
-    The "char" type in Java represents a single character and is written in single quotes like this: 'e'.
-    Here's a version of the twoE() method which uses str.charAt(i) to access each char of a string.
-    Use == to compare chars.*/
-
   public boolean twoE(String str) {
     int count = 0;
     for (int i = 0; i < str.length(); i++) {
@@ -50,6 +25,132 @@ public class StringsTests {
     String v = "venegar";
     boolean isTwo = twoE(v);
     Assert.assertTrue(isTwo);
+  }
+
+  public String doubleChar(String str) {
+    String res = "";
+    for(int i=0;i<str.length();i++){
+      res = res + str.charAt(i) + str.charAt(i);
+    }
+    return res;
+  }
+  @Test
+  public void testDoubleChar() {
+    String str = "moloko";
+    String checkIfDouble = doubleChar(str);
+    System.out.println(checkIfDouble);
+  }
+
+
+
+
+
+
+
+
+
+
+  public int countCode(String str) {
+    int count = 0;
+    for (int i = 0; i <= str.length()-4; i++) {
+      String sub = str.substring(i,i+4);
+      if (sub.matches("co\\we")) count++;
+    }
+    return count;
+  }
+  @Test
+  public void testCountCode() {
+    String str = "acoleaabbb";
+    System.out.println(countCode(str));
+  }
+
+
+  public boolean endOther(String a, String b)
+  {
+    int aLen = a.length();
+    int bLen = b.length();
+    String end;
+    String temp;
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    if(aLen >= bLen)
+    {
+      end = a.substring(aLen - bLen);
+      temp = b;
+    }
+    else
+    {
+      end = b.substring(bLen - aLen);
+      temp = a;
+    }
+    return (end.equals(temp));
+  }
+
+  @Test
+  public void testEndOther() {
+    String a = "coFFeeShop";
+    String b = "Shop";
+    System.out.println(endOther(a,b));
+    //Assert.assertTrue(endOther(a,b));
+  }
+
+
+  public String oneTwo(String str) {
+    String result = "";
+    for(int i=0; i <str.length()-2; i += 3)
+    {
+      result = result + str.substring(i+1,i+3) + str.charAt(i);
+    }
+    return result;
+  }
+  @Test
+  public void testOneTwo() {
+    String str = "tcagdou";
+    String check = oneTwo(str);
+    System.out.println(check);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public boolean no13(int[] nums)
+  {
+    for(int i = 0; i < nums.length; i++)
+    {
+      if(nums[i] == 1 || nums[i] == 3)
+        return false;
+    }
+    return true;
+  }
+  @Test
+  public void testNo13() {
+    int[] array = new int[] {0, 4, 7};
+    boolean checkIfNo13 = no13(array);
+    System.out.println(checkIfNo13);
+  }
+
+  public boolean has22or44(int[] nums) {
+    for(int i = 0; i < nums.length-1; i++) {
+      if(nums[i] == 2 && nums[i+1] == 2 || nums[i] == 4 && nums[i+1] == 4)
+        return true;
+    }
+    return false;
+  }
+  @Test
+  public void testHas22or44() {
+    int[] array = new int[] {0, 4, 4, 7};
+    boolean hasOrNot = has22or44(array);
+    System.out.println(hasOrNot);
   }
 
   public boolean CharTwoE(String str) {
@@ -98,5 +199,64 @@ public class StringsTests {
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  public String oneTwo1(String str) {
+    if(str.length()<3)
+      return "";
+    String three="";
+    String two="";
+    String one="";
+    String neww="";
+    int end=str.length()/3;
+    //String word=str.substring(str.length()%3,str.length());
+
+    for(int i=0; i<=end; i+=3){
+      three=str.substring(i,i+3);
+      two=three.substring(i+1,3);
+      one=three.substring(i,1);
+      neww=neww+two+one;
+    }
+    return neww;
+  }
+  @Test
+  public void testOneTwo1() {
+    String str = "tcagdo";
+    String check = oneTwo1(str);
+    System.out.println(check);
+  }
 
 }
