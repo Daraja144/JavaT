@@ -10,12 +10,13 @@ public class Chicken {
     String result = "";
     String temp = "";
 
-      for (int i = 0; i < word.length(); i++)
-        for (int y= 0; y < letters.length; y++)
-        if (word.contains(letters[y]))
-          temp += letters[i];
-
-    return temp;
+        for (int i = 0; i < word.length(); i++) {
+          temp = word.substring(i,i+1);
+        for (int y = 0; y < letters.length; y++) {
+          if (temp.contains(letters[y])) result += temp;
+        }
+      }
+       return result;
   }
 
   public static void main(String[] args)
