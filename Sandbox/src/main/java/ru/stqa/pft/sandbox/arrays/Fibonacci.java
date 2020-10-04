@@ -9,7 +9,7 @@ public class Fibonacci {
    */
   public static int[] fun(int[] nums){
     int newSum[] = new int[nums.length-1];
-    int sum = 0;
+    int sum;
     for (int i = 0; i + 1 < nums.length; i++ ) {
       sum = nums[i] + nums[i+1];
       //System.out.println(sum);
