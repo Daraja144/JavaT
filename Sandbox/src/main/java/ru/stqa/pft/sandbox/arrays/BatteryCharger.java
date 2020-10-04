@@ -60,7 +60,7 @@ public class BatteryCharger {
       //this method should return the rateTable as a String
       return "write your toString";
     }
-  
+
   public static void main(String[] args) {
 
     BatteryCharger bob = new BatteryCharger();
@@ -95,3 +95,59 @@ public class BatteryCharger {
     System.out.println( ann.getChargeStartTime( 30 ) );   //outs 22
   }
 }
+
+/*
+public class BatteryCharger {
+
+	private int[] rateTable = {50,60,160,60,80,100,100,120,150,150,150,200,40,240,220,220,200,200,180,180,140,100,80,60};
+
+	// Really, nothing to do here...
+	public BatteryCharger() {
+	}
+
+	// Solution to part (a).
+	private int getChargingCost(int startHour, int chargeTime) {
+
+		int sum = 0;
+
+		// Add up the charge for each hour. Note the use of the mod operator
+		// in the index to the rateTable array.
+		for (int i=startHour; i<startHour+chargeTime; i++)
+			sum += rateTable[i%24];
+
+		return sum;
+	}
+
+	public int getChargeStartTime(int chargeTime) {
+
+		// Set up the initial best start time and cost.
+		int bestTime = 0;
+		int bestCost = getChargingCost(0, chargeTime);
+
+		// Let's see if any other time beats it.
+		for (int i=1; i<24; i++) {
+
+			int newCost = getChargingCost(i, chargeTime);
+
+			// Update our best time and cost, if necessary.
+			if (newCost < bestCost) {
+				bestCost = newCost;
+				bestTime = i;
+			}
+		}
+
+		return bestTime;
+	}
+
+	public static void main(String[] args) {
+
+		// Mostly a dummy object; gives us access to the table...
+		BatteryCharger b = new BatteryCharger();
+
+		// Print out the best start time for each distinct duration.
+		for (int i=1; i<24; i++)
+			System.out.println("The best start time for charging "+i+" hours is "+b.getChargeStartTime(i));
+
+	}
+}
+ */
