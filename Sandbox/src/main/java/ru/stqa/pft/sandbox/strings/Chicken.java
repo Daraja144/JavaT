@@ -7,16 +7,29 @@ public class Chicken {
    */
 
   public static String fun(String word, String[] letters) {
-    String result = "";
-    String temp = "";
+    return removeChar(word);
+    }
 
-        for (int i = 0; i < word.length(); i++) {
-          temp = word.substring(i,i+1);
-        for (int y = 0; y < letters.length; y++) {
-          if (temp.contains(letters[y])) result += temp;
-        }
+
+  public static String removeChar(String src){
+    char[] srcArr = src.toCharArray();
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < srcArr.length; i++) {
+      char foundChar = isFound(srcArr[i]);
+      if(foundChar!='\0')
+        sb.append(foundChar);
+    }
+    return sb.toString();
+  }
+
+  public static char isFound(char src){
+    char[] letters = {'a','e','i','o','u'};
+    for (int i = 0; i < letters.length; i++) {
+      if(src==letters[i]){
+        return '\0';
       }
-       return result;
+    }
+    return src;
   }
 
   public static void main(String[] args)
@@ -26,9 +39,9 @@ public class Chicken {
 
     System.out.println(fun("chicken", vowels));  //outs chckn
 
-    /*String[] words = ("alligator baboon camel elephant fish gorilla hippo iguana jackal kangaroo " +
+    String[] words = ("alligator baboon camel elephant fish gorilla hippo iguana jackal kangaroo " +
             "lion monkey newt octopus pig quail rooster snail turtle urial viper walrus xenops yak zebu").split(" ");
     for(String word: words)
-      System.out.println(word + " >> " + fun(word, vowels));*/
+      System.out.println(word + " >> " + fun(word, vowels));
   }
 }
