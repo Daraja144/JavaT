@@ -12,6 +12,7 @@ public class LeastFrequent {
 
     for (Integer i : array) {
       counts.merge(i, 1, Integer::sum);
+      System.out.println(counts);
     }
     //find min value by sorting values and taking top element
     List<Integer> cs = new ArrayList<Integer>(counts.values());

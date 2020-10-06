@@ -10,7 +10,7 @@ public class DobleCube {
    *	Post-condition: The given array will not be edited!
    */
   public static int[] fun(int[] stars){
-    int newStars[] = new int [stars.length];
+    int []newStars = new int [stars.length];
 
     for (int i = 0; i < stars.length; i++) {
       if (stars[i]%2==0) {

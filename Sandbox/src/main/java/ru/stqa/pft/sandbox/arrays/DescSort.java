@@ -14,7 +14,7 @@ public class DescSort {
   public static int[] fun( int[] mary) {
     Integer maryToInteger[] = new Integer [mary.length];
     int newMary[] = new int [mary.length];
-   // List<Integer> maryToList = new ArrayList<>();
+
     for (int i = 0; i < mary.length; i++) {
       maryToInteger[i] = Integer.valueOf(mary[i]);
     }
